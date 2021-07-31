@@ -8,7 +8,7 @@ On this section the main point of discussion is introduction to HTML, some basic
 
 | Keywords                                      | Notes                                                                                                                |
 | --------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
-| `<h1>–<h6>` The HTML Section Heading elements | HTML elements represent six levels of section headings. `<h1>` is the highest section level and `<h6>`is the lowest. |
+| `<h1>–<h6>` The HTML Section Heading elements | HTML elements represent six levels of section headings. `<h1>` is the highest section level and `<h6>`is the lowest. 
 
 ```
 <h1>Heading level 1</h1>
@@ -74,7 +74,7 @@ The `<em>` element represents stress emphasis of its contents, while the `<i>` e
 |`<ul>` The Unordered List element |
 The `<ul>` HTML element represents an unordered list of items, typically rendered as a bulleted list.
 
-````
+```
 
 <ul>
   <li>first item</li>
@@ -85,7 +85,7 @@ The `<ul>` HTML element represents an unordered list of items, typically rendere
 ```|
 |`<ol>` The Ordered List element | The `<ol>` HTML element represents an ordered list of items — typically rendered as a numbered list.
 
-````
+```
 
 <ol>
   <li>Fee</li>
