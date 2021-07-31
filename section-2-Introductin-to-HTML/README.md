@@ -18,9 +18,7 @@ On this section the main point of discussion is introduction to HTML, some basic
 <h5>Heading level 5</h5>
 <h6>Heading level 6</h6>
 
-```
-
-
+```|
 | `<hr>` The Thematic Break (Horizontal Rule) element | Break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.|
 | Site to read Documentation |[MDN Web Docs](https://developer.mozilla.org/en-US/), [w3schools](https://www.w3schools.com/), [devdocs](https://devdocs.io/) |
 | `<br>` Line break | This is used to enter break lines |
