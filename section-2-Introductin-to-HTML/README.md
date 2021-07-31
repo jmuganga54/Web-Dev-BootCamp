@@ -8,7 +8,8 @@ On this section the main point of discussion is introduction to HTML, some basic
 
 | Keywords                                      | Notes                                                                                                                |
 | --------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
-| `<h1>–<h6>` The HTML Section Heading elements | HTML elements represent six levels of section headings. `<h1>` is the highest section level and `<h6>`is the lowest. ```
+| `<h1>–<h6>` The HTML Section Heading elements | HTML elements represent six levels of section headings. `<h1>` is the highest section level and `<h6>`is the lowest. 
+```
 <h1>Heading level 1</h1>
 <h2>Heading level 2</h2>
 <h3>Heading level 3</h3>
@@ -25,7 +26,7 @@ On this section the main point of discussion is introduction to HTML, some basic
 |Self-closing tag | Example `<br>` Tag with no closing tag(end tag) |
 | HTML Attribute | Example `<hr size="3">` Give more information to the browser modification to that HTML element|
 | Comments in HTML | `<!--Comment-->`This is how you insert comment in HTML|
-| HTML boiler plate|
+| HTML boiler plate |
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -46,13 +47,11 @@ On this section the main point of discussion is introduction to HTML, some basic
 |`<html></html>`| It consist of `<head></head>` and `<body></body>`|
 |`<head></head>`| It tells the browser how it should handle the page,
 For example, we might have a title tag `</title> which tells the browser what is the title of this particular page `<meta>` tag defines metadata about an HTML document. Metadata is data (information) about data.Metadata will not be displayed on the page, but is machine parsable.
-```
-  <meta charset="UTF-8">
+```<meta charset="UTF-8">
   <meta name="description" content="Free Web tutorials">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="John Doe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 ```|
 |`<body></body>` Defines the document's body.|The `<body>` element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc|
 | `<em>` The Emphasis element|Element marks text that has stress emphasis|
@@ -62,41 +61,34 @@ The `<em>` element represents stress emphasis of its contents, while the `<i>` e
 |`<b>` vs. `<strong>`| The `<strong>` element is for content that is of greater importance, while the `<b>` element is used to draw attention to text without indicating that it's more important.|
 |`<ul>` The Unordered List element |
 The `<ul>` HTML element represents an unordered list of items, typically rendered as a bulleted list.
-```
-<ul>
+```<ul>
   <li>first item</li>
   <li>second item</li>
   <li>third item</li>
 </ul>
-
 ```|
 |`<ol>` The Ordered List element | The `<ol>` HTML element represents an ordered list of items — typically rendered as a numbered list.
 
-```
-<ol>
+```<ol>
   <li>Fee</li>
   <li>Fi</li>
   <li>Fo</li>
   <li>Fum</li>
 </ol>
-
-```
-|
+```|
 |`<img>` The Image Embed element |
 The <img> HTML element embeds an image into the document.
-```
-<img src="https://source-of-image"
+```<img src="https://source-of-image"
      alt="if-the-image-failed-to-load">
 ```|
 |`<a>` The Anchor element | The `<a>` HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
-```
-<ul>
+```<ul>
   <li><a href="https://example.com">Website</a></li>
   <li><a href="mailto:m.bluth@example.com">Email</a></li>
   <li><a href="tel:+123456789">Phone</a></li>
 </ul>
-
-```|
+```
+|
 
 ## Summary
 HTML is the universal markup language for the Web. HTML lets you format text, add graphics, create links, etc., and save it all in a text file that any browser can read and display.
