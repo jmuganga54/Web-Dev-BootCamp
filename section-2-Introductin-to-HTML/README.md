@@ -8,8 +8,7 @@ On this section the main point of discussion is introduction to HTML, some basic
 
 | Keywords                                      | Notes                                                                                                                |
 | --------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
-| `<h1>–<h6>` The HTML Section Heading elements | HTML elements represent six levels of section headings. `<h1>` is the highest section level and `<h6>`is the lowest. 
-```
+| `<h1>–<h6>` The HTML Section Heading elements | HTML elements represent six levels of section headings. `<h1>` is the highest section level and `<h6>`is the lowest. ```
 <h1>Heading level 1</h1>
 <h2>Heading level 2</h2>
 <h3>Heading level 3</h3>
