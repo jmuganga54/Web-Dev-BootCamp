@@ -1,22 +1,22 @@
-# CS50's Web Programming with Python and JavaScript
+# Web Dev Bootcamp
 
-> CS50's Web Programming with Python and JavaScript
+> Web Dev Bootcamp
 
-`CS50's Web Programming with Python and JavaScript ` This project was created as the basis to remind myself on some web technologies, nothing serious.If you find useful, it is free to use.All of the codes from this project is from [CS50's Web Programming with Python and Javascript 2020] course
+`Web Dev BootCamp ` This project was created to learn some web technologies.If you find useful, it is free to use.All of the codes from this project is from [The Complete 2021 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/) by [Dr.Angel Yu] (https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/).
 
-## Goals
+## Goal
 
-- Recap web technologies
+- Learning Web Technologies [HTML, CSS, Javascript, Node, React and MongoDB ]
 
 ## Structure
 
-- No proper structure each file is independent.
+- Each section of a course has it's own folder
 
 ## Course Source
 
-| Course                                                 | Home Page                                                                  |
-| ------------------------------------------------------ | -------------------------------------------------------------------------- |
-| CS50's Web Programming with Python and JavaScript 2020 | <https://www.youtube.com/playlist?list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu> |
+| Course                                            | Home Page                                                             |
+| ------------------------------------------------- | --------------------------------------------------------------------- |
+| Udemy: The Complete 2021 Web Development Bootcamp | <https://www.udemy.com/course/the-complete-web-development-bootcamp/> |
 
 ## Contributing
 
