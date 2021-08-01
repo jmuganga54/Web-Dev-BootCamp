@@ -140,7 +140,7 @@ For example, we might have a title tag  <code>&lt;title&gt;</code>  which tells 
 &lt;/ul&gt;
 </code>
 </pre>
-|</td>
+</td>
 </tr>
 <tr>
 <td><code>&lt;ol&gt;</code> <strong>: The Ordered List element</strong></td>
