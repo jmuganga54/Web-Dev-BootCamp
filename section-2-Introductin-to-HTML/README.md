@@ -1,4 +1,4 @@
-## Topic
+## Introduction to HTML
 
 On this section the main point of discussion is introduction to HTML, some basic code to understand. Some of the topics discussed in this section are:
 
@@ -130,7 +130,7 @@ For example, we might have a title tag  <code>&lt;title&gt;</code>  which tells 
 </tr>
 <tr>
 <td><code>&lt;ul&gt;</code> <strong>: The Unordered List element</strong></td>
-<td>The <code>&lt;l&gt;</code>  HTML element represents an unordered list of items, typically rendered as a bulleted list.
+<td>The <code>&lt;ul&gt;</code>  HTML element represents an unordered list of items, typically rendered as a bulleted list.
 <pre>
 <code>
 &lt;ul&gt;
@@ -154,7 +154,7 @@ For example, we might have a title tag  <code>&lt;title&gt;</code>  which tells 
 &lt;/ol&gt;
 </code>
 </pre>
-|</td>
+</td>
 </tr>
 <tr>
 <td><code>&lt;img&gt;</code> <strong>: The Image Embed element</strong></td>
@@ -186,3 +186,4 @@ alt="if-the-image-failed-to-load"&gt;
 
 ## Summary
 HTML is the universal markup language for the Web. HTML lets you format text, add graphics, create links, etc., and save it all in a text file that any browser can read and display.
+
