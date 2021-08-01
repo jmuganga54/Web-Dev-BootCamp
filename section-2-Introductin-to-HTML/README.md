@@ -1,4 +1,4 @@
-## Topic
+## Introduction to HTML
 
 On this section the main point of discussion is introduction to HTML, some basic code to understand. Some of the topics discussed in this section are:
 
