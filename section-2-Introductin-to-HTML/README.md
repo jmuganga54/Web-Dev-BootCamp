@@ -130,7 +130,7 @@ For example, we might have a title tag  <code>&lt;title&gt;</code>  which tells 
 </tr>
 <tr>
 <td><code>&lt;ul&gt;</code> <strong>: The Unordered List element</strong></td>
-<td>The <code>&lt;l&gt;</code>  HTML element represents an unordered list of items, typically rendered as a bulleted list.
+<td>The <code>&lt;ul&gt;</code>  HTML element represents an unordered list of items, typically rendered as a bulleted list.
 <pre>
 <code>
 &lt;ul&gt;
@@ -140,7 +140,7 @@ For example, we might have a title tag  <code>&lt;title&gt;</code>  which tells 
 &lt;/ul&gt;
 </code>
 </pre>
-|</td>
+</td>
 </tr>
 <tr>
 <td><code>&lt;ol&gt;</code> <strong>: The Ordered List element</strong></td>
