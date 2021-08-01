@@ -2,7 +2,7 @@
 
 > Web Dev Bootcamp
 
-`Web Dev BootCamp ` This project was created to learn some web technologies.If you find useful, it is free to use.All of the codes from this project is from [The Complete 2021 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/) by [Dr.Angel Yu] (https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/).
+`Web Dev BootCamp ` This project was created to learn some web technologies.If you find useful, it is free to use.All of the codes from this project is from [The Complete 2021 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/) by [Dr.Angel Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/).
 
 ## Goal
 
