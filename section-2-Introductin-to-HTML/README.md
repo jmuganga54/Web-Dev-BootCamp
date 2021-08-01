@@ -154,7 +154,7 @@ For example, we might have a title tag  <code>&lt;title&gt;</code>  which tells 
 &lt;/ol&gt;
 </code>
 </pre>
-|</td>
+</td>
 </tr>
 <tr>
 <td><code>&lt;img&gt;</code> <strong>: The Image Embed element</strong></td>
