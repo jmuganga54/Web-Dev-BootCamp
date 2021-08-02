@@ -11,16 +11,16 @@ In this section I learn about introduction to CSS, the following are topic discu
 - Classes vs Ids
 
 ## Keywords & Notes
-### (Getting started with CSS)[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started]
-In this article we (link above) take a simple HTML document and apply CSS to it, learning some practical things about the language along the way.
+### [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
+In this article we (link above] take a simple HTML document and apply CSS to it, learning some practical things about the language along the way.
 
-### (How CSS is structured)[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured]
+### [How CSS is structured](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured)
 The link above will you how CSS is structured
 
-### (How CSS works)[https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works]
+### [How CSS works](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works)
 In this lesson(link above) we will take a look at how a browser takes CSS and HTML and turns that into a webpage.
 
-### (Comments)[https://developer.mozilla.org/en-US/docs/Web/CSS/Comments]
+### [Comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
 A CSS `comment` is used to add explanatory notes to the code or to prevent the browser from interpreting specific parts of the style sheet. By design, comments have no effect on the layout of a document.
 
 `Syntax`
@@ -47,7 +47,7 @@ span {
 
 ```
 
-### (background-color)[https://developer.mozilla.org/en-US/docs/Web/CSS/background-color]
+### [background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
 The `background-color` CSS property sets the background color of an element.
 
 `Syntax`
@@ -66,10 +66,10 @@ background-color: #1fef;      /* Fully opaque shorthand  */
 ```
 Site to find beautiful color [Color Hut](https://colorhunt.co/)
 
-### (CSS Default Values Reference)[https://www.w3schools.com/cssref/css_default_values.asp]
+### [CSS Default Values Reference](https://www.w3schools.com/cssref/css_default_values.asp)
 By default, the browser has some pre-defined css values to html element, see the reference above.
 
-### (border-Style)[https://developer.mozilla.org/en-US/docs/Web/CSS/border-style]
+### [border-Style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style)
 The *border-style* `shorthand CSS` property sets the line style for all four sides of an element's border.
 
 #### Constituent properties
@@ -108,7 +108,7 @@ border-style: initial;
 border-style: revert;
 border-style: unset;
 ```
-### (box-sizing)[https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing]
+### [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 The `box-sizing` *CSS* property sets how the total width and height of an element is calculated.
 
 By default in the `CSS box model`, the width and height you assign to an element is applied only to the element's `content box`. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. 
@@ -131,7 +131,7 @@ box-sizing: revert;
 box-sizing: unset;
 ```
 
-### (height)[https://developer.mozilla.org/en-US/docs/Web/CSS/height]
+### [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
 The `height` CSS property specifies the height of an element. By default, the property defines the height of the `content area`. If `box-sizing` is set to `border-box`, however, it instead determines the height of the `border area`.
 
 `Syntax`
@@ -155,7 +155,7 @@ height: initial;
 height: revert;
 height: unset;
 ```
-### (width)[https://developer.mozilla.org/en-US/docs/Web/CSS/width]
+### [width](https://developer.mozilla.org/en-US/docs/Web/CSS/width)
 The width CSS property sets an element's width. By default, it sets the width of the `content area`, but if `box-sizing` is set to `border-box`, it sets the width of the `border` area.
 
 ```
@@ -179,7 +179,7 @@ width: revert;
 width: unset;
 
 ```
-### (border-width)[https://developer.mozilla.org/en-US/docs/Web/CSS/border-width]
+### [border-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width)
 The `border-width` *shorthand* CSS property sets the width of an element's border.
 
 #### Constituent properties
@@ -215,17 +215,17 @@ border-width: initial;
 border-width: revert;
 border-width: unset;
 ```
-### (`<link>`: The External Resource Link element)[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link]
+### [`<link>`: The External Resource Link element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
 The`<link>` HTML element specifies relationships between the current document and an external resource. This element is most commonly used to link to stylesheets, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.
 
 ⋅⋅⋅To link an external stylesheet, you'd include a <link> element inside your <head> like this:
 ```<link href="main.css" rel="stylesheet">
 ```
 
-### (Debugging CSS)[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS]
+### [Debugging CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
 Sometimes when writing CSS you will encounter an issue where your CSS doesn't seem to be doing what you expect for more read the link above.
 
-### (Order of precedence for CSS)[https://stackoverflow.com/questions/25105736/what-is-the-order-of-precedence-for-css]
+### [Order of precedence for CSS](https://stackoverflow.com/questions/25105736/what-is-the-order-of-precedence-for-css)
 There are several rules ( applied in this order ) :
 
 1. inline css ( html style attribute ) overrides css rules in style tag and css file
@@ -238,10 +238,10 @@ Specificity for single selectors from highest to lowest:
 * classes (ex.: .myclass), attribute selectors (ex.: `[href=^https:]`) and pseudo-classes (ex.: :hover)
 * elements (`ex.: div`) and `pseudo-elements (ex.: ::before)`
 
-### (CSS reference)[https://developer.mozilla.org/en-US/docs/Web/CSS/Reference]
+### [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 Use this *CSS reference* to browse an `alphabetical index` of all of the standard `CSS` properties, `pseudo-classes`, `pseudo-elements`, `data types`, `functional notations` and `at-rules`. You can also browse key CSS concepts and a list of `selectors organized by type`. Also included is a brief `DOM-CSS` / CSSOM reference.`
 
-### (The Anatomy of a CSS Rule)[https://css3-tutorial.net/introduction/anatomy-and-syntax-of-css/]
+### [The Anatomy of a CSS Rule](https://css3-tutorial.net/introduction/anatomy-and-syntax-of-css/)
 ```
 h1 {
 	color: DeepSkyBlue;
@@ -262,12 +262,12 @@ h2 {
 	color: GreenYellow;
 }
 ```
-### (CSS Classes)[https://blog.hubspot.com/website/what-is-css-class]
+### [CSS Classes](https://blog.hubspot.com/website/what-is-css-class)
 A `CSS class` is an attribute used to define a group of HTML elements in order to apply `unique formatting` to those `elements` in CSS. This group can contain `more than one type of element.`
 
 `Class names` don't have to be one word either. A widely-accepted practice for creating CSS classes is to use `lowercase and replace spaces with hyphens`. Some examples include `.bright-blue` and `.fancy-text.`
 
-(`More Reading About Classes`)[https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes]
+[`More Reading About Classes`](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 
 `Create a Class` name of class is pastoral
 
@@ -302,7 +302,7 @@ button:hover {
 }
 ```
 
-### (ID selectors)[https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors]
+### [ID selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors)
 `ID selectors` work much like `class selectors`, only more stringently. With this method, you have a `unique ID for a single element per page`, making it impossible to `reuse` styles.
 
 The CSS `ID selector` matches an element based on the value of the element’s id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector.
@@ -313,17 +313,17 @@ The CSS `ID selector` matches an element based on the value of the element’s i
 }
 ```
 
-### (CSS Specificity)[https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity]
+### [CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 Different `CSS selectors` have varying weights, in certain cases. When two or more rules conflict on the same element, the `more specific` one applies — which is what `CSS specificity` is about. The ranking of style declarations by certain browser rules determines the ultimate appearance of an element.
 
 `Specificity` is the means by which browsers decide which CSS property values are the `most relevant` to an element and, therefore, `will be applied`. `Specificity` is based on the `matching rules` which are composed of different `sorts of CSS selectors`.
 
-### (Class vs Id)[https://stackoverflow.com/questions/19914617/css-ids-and-classes/19914768]
+### [Class vs Id](https://stackoverflow.com/questions/19914617/css-ids-and-classes/19914768)
 There are several differences between `ids` and `classes`. Probably most importantly there is a semantic difference. An `Id` needs to be `unique` (actually you `html is invalid` if you use the `same id twice in the document`) and identifies special elements in your HTML Document, `classes` are there to `group elements` which have `something in common`.
 
 1. Searching for `id` in the HTML Tree is faster than `class` because the css processor stops at the first matching element it finds. (Thus `id` css selectors are faster).
 
-2. `Ids` and `classes` have different (`specificity`)[https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/]. Since `ids` are `unique` in the document, they have `higher specificity` than `classes`. This is important in bigger projects where you have a lot of CSS rules where a lot of overwriting occurs.
+2. `Ids` and `classes` have different [`specificity`](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/). Since `ids` are `unique` in the document, they have `higher specificity` than `classes`. This is important in bigger projects where you have a lot of CSS rules where a lot of overwriting occurs.
 
 3. The difference between classes and ids is even greater once you work with javascript.
 
