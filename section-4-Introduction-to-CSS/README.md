@@ -334,7 +334,7 @@ Defining new elements leads you markup to be invalid, that's why the last option
 
 
 ## Summary
-`What is Css?``CSS` stands for `C`ascading `S`tyle `S`heets. Its purpose is to style markup languages (like HTML or XML). Therefore, CSS is worthless on its own, unless associated with an HTML document.
+`What is Css?` `CSS` stands for `C`ascading `S`tyle `S`heets. Its purpose is to style markup languages (like HTML or XML). Therefore, CSS is worthless on its own, unless associated with an HTML document.
 
 
 `How CSS works`How CSS works is by `selecting` an HTML element (like a paragraph), choosing a `property` to alter (like the color), and applying a certain `value` (like red):
