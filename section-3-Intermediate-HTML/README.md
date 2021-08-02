@@ -1,12 +1,6 @@
-## Introduction to HTML
+## Intermediate HTML
 
-On this section the main point of discussion is introduction to HTML, some basic code to understand. Some of the topics
-discussed in this section are:
-
-- Introduction to HTML
-- The Anatomy of an HTML Tag
-- Basic element tags in HTML
-
+On this section I learn some intermediate HTML elements `<table>` and `<form>`, together with different attributes this element have.
 ## Keywords & Notes
 
 ### `<table>`*: The Table element*
@@ -88,5 +82,15 @@ The `<input>` HTML element is used to create interactive controls for web-based 
 
 
 ## Summary
-HTML is the universal markup language for the Web. HTML lets you format text, add graphics, create links, etc., and save
-it all in a text file that any browser can read and display.
+`<form>` defines an easy boundary for the user agent to be able to identify all the elements to be submitted to the server. It also allows the user agent to attach convenient default behaviors to the form and the form's child elements. For example being able to hit enter and the form data is submitted. It also allowed for a place to specify where the data would go via attributes on the form element. So all this behavior is available by default without JavaScript. At the same time it also allows easier access in JavaScript via the DOM (form.elements collection)
+
+`<table>`The HTML table is used for arranging data (such as text, images, links etc.) into the tabular design — basically, rows and columns.
+
+`When to Use Tables` A table in HTML makes a lot of sense when you want to organize data that would look best in a spreadsheet. An HTML table is a great way to display things such as financial data, calendars, pricing, feature comparison, the nutrition facts information panel, bowling scores, and many other tabular data.
+
+`When NOT to Use Tables`You should never use tables for layout. The thing is that table elements semantically describe tabular data and using them for other purposes is a breach of semantic duty.
+
+The general rule is that the websites should be accessible. One part of accessibility is screen readers which read tables from top to bottom, left to right. With the tables in HTML, the order of how the site is presented is determined by visual choices instead of the accessibility choices. In cases like that, screen readers don’t always work as you’d want them to.
+
+
+
