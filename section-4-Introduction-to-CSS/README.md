@@ -64,7 +64,7 @@ background-color: #1fe0;      /* Fully transparent shorthand  */
 background-color: #11ffeeff;  /* Fully opaque */
 background-color: #1fef;      /* Fully opaque shorthand  */
 ```
-Site to find beautiful color [Color Hut](https://colorhunt.co/)
+Site to find beautiful colors [Color Hut](https://colorhunt.co/)
 
 ### [CSS Default Values Reference](https://www.w3schools.com/cssref/css_default_values.asp)
 By default, the browser has some pre-defined css values to html element, see the reference above.
@@ -218,19 +218,21 @@ border-width: unset;
 ### [`<link>`: The External Resource Link element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
 The`<link>` HTML element specifies relationships between the current document and an external resource. This element is most commonly used to link to stylesheets, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.
 
-⋅⋅⋅To link an external stylesheet, you'd include a <link> element inside your <head> like this:
-```<link href="main.css" rel="stylesheet">
+To link an external stylesheet, you'd include a <link> element inside your <head> like this:
+
+```
+<link href="main.css" rel="stylesheet">
 ```
 
 ### [Debugging CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
-Sometimes when writing CSS you will encounter an issue where your CSS doesn't seem to be doing what you expect for more read the link above.
+Sometimes when writing CSS you will encounter an issue where your CSS doesn't seem to be doing what you expect, for more read the link above.
 
 ### [Order of precedence for CSS](https://stackoverflow.com/questions/25105736/what-is-the-order-of-precedence-for-css)
 There are several rules ( applied in this order ) :
 
-1. inline css ( html style attribute ) overrides css rules in style tag and css file
-2. a more specific selector takes precedence over a less specific one
-3. rules that appear later in the code override earlier rules if both have the same specificity.
+1. `inline css` ( html style attribute ) `overrides` css rules in style tag and css file
+2. a `more specific selector` takes precedence over a less specific one
+3. `rules that appear later` in the code override `earlier rules` if `both` have the `same specificity`.
 4. A css rule with `!important` always takes precedence.
 
 Specificity for single selectors from highest to lowest:
@@ -244,7 +246,7 @@ Use this *CSS reference* to browse an `alphabetical index` of all of the standar
 ### [The Anatomy of a CSS Rule](https://css3-tutorial.net/introduction/anatomy-and-syntax-of-css/)
 ```
 h1 {
-	color: DeepSkyBlue;
+  color: DeepSkyBlue;
 }
 ```
 What we have here is a `selector` with one `property` and one `value` - these are the core concepts of CSS and you should try to remember their names. In above example, `h1 is the selector name`, `color is the property` and `DeepSkyBlue is the value`.
@@ -272,6 +274,7 @@ A `CSS class` is an attribute used to define a group of HTML elements in order t
 `Create a Class` name of class is pastoral
 
 *Example*
+
 `HTML FILE`
 ```
 <h1>Not green</h1>
@@ -331,7 +334,7 @@ Defining new elements leads you markup to be invalid, that's why the last option
 
 
 ## Summary
-`What is Css?'`CSS` stands for `C`ascading `S`tyle `S`heets. Its purpose is to style markup languages (like HTML or XML). Therefore, CSS is worthless on its own, unless associated with an HTML document.
+`What is Css?``CSS` stands for `C`ascading `S`tyle `S`heets. Its purpose is to style markup languages (like HTML or XML). Therefore, CSS is worthless on its own, unless associated with an HTML document.
 
 
 `How CSS works`How CSS works is by `selecting` an HTML element (like a paragraph), choosing a `property` to alter (like the color), and applying a certain `value` (like red):
