@@ -1,6 +1,6 @@
 ## Intermediate HTML
 
-On this section I learn some intermediate HTML elements `<table>` and `<form>`, together with different attributes this element have.
+On this section I learn some intermediate HTML elements `<table>` and `<form>`, together with different attributes these elements have.
 ## Keywords & Notes
 
 ### `<table>`*: The Table element*
