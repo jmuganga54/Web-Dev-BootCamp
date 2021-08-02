@@ -1,4 +1,5 @@
 ## Introduction to CSS
+In this section I learn about introduction to CSS, the following are topic discussed.
 
 - Introduction to CSS
 - Inline CSS
