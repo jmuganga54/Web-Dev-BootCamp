@@ -1,5 +1,5 @@
 ## Introduction to CSS
-In this section I learn about introduction to CSS, the following are topic discussed.
+In this section the main topic is ntroduction to CSS, the following are topics discussed.
 
 - Introduction to CSS
 - Inline CSS
@@ -12,10 +12,10 @@ In this section I learn about introduction to CSS, the following are topic discu
 
 ## Keywords & Notes
 ### [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
-In this article we (link above] take a simple HTML document and apply CSS to it, learning some practical things about the language along the way.
+In this article (link above] takes a simple HTML document and apply CSS to it, learning some practical things about the language along the way.
 
 ### [How CSS is structured](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured)
-The link above will you how CSS is structured
+The link above shows how how CSS is structured
 
 ### [How CSS works](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works)
 In this lesson(link above) we will take a look at how a browser takes CSS and HTML and turns that into a webpage.
