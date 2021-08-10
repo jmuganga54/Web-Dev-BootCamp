@@ -1,0 +1,16 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "This is into to node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph",
+  "license": "ISC",
+  "dependencies": {
+    "enketo-xslt": "^1.25.0",
+    "superheroes": "^3.0.0",
+    "supervillains": "^3.0.0"
+  }
+}
