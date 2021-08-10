@@ -210,7 +210,7 @@ span {
 </p>       
 ```
 
-![The box model and inline boxes](./img-md/inline-box-model)
+![The box model and inline boxes](./img-md/inline-box-model.png)
 
 #### [Using display: inline-block](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#using_display_inline-block)
 There is a special `value` of `display`, which provides a `middle` ground between `inline` and `block`. This is `useful` for situations where you do not want an item to `break` onto a `new line`, but `do want` it to `respect` `width` and `height` and avoid the `overlapping seen above`.
@@ -227,7 +227,7 @@ In this next example, we have added display: inline-block to our <span> element.
 see the difference in display models.
 ```
 
-![inline-block](./img-md/inline-block)
+![inline-block](./img-md/inline-block.png)
 
 `CSS FILE`
 ```
@@ -248,9 +248,9 @@ span {
     I am a paragraph and this is a <span>span</span> inside that paragraph. A span is an inline element and so does not respect width and height.
 </p>     
 ```
-```
+
 Where this can be useful is when you want to give a link a larger hit area by adding padding. <a> is an inline element like <span>; you can use display: inline-block to allow padding to be set on it, making it easier for a user to click the link.
-```
+
 
 
 ### [Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
