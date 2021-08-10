@@ -201,17 +201,16 @@ span {
   background-color: lightblue;
   border: 2px solid blue;
 }
-   
 ```
+
 `HTML FILE`
 ```
 <p>
     I am a paragraph and this is a <span>span</span> inside that paragraph. A span is an inline element and so does not respect width and height.
-</p>     
-    
+</p>       
 ```
 
-![The box model and inline boxes](./img/inline-box-model)
+![The box model and inline boxes](./img-md/inline-box-model)
 
 #### [Using display: inline-block](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#using_display_inline-block)
 There is a special `value` of `display`, which provides a `middle` ground between `inline` and `block`. This is `useful` for situations where you do not want an item to `break` onto a `new line`, but `do want` it to `respect` `width` and `height` and avoid the `overlapping seen above`.
@@ -224,7 +223,9 @@ An element with `display: inline-block` does a subset of the block things we alr
 It does not, however, break onto a new line, and will only become larger than its content if you explicitly add width and height properties.
 
 ```
-In this next example, we have added display: inline-block to our <span> element. Try changing this to display: block or removing the line completely to see the difference in display models.›
+In this next example, we have added display: inline-block to our <span> element. Try changing this to display: block or removing the line completely to 
+see the difference in display models.
+```
 
 ![inline-block](./img-md/inline-block)
 
