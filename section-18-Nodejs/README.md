@@ -1,7 +1,6 @@
 ## Topic
-
+In this section we will learn about Nodejs and npm(Node Package Manager).
 ## Keywords & Notes
-
 ### [Node.js](https://developer.mozilla.org/en-US/docs/Glossary/Node.js?retiredLocale=hu)
 `Node.js` is a cross-platform `JavaScript` runtime environment that allows developers to build `server-side` and `network` applications with `JavaScript`.
 
@@ -133,3 +132,7 @@ npm install <your-module-name>
 5. In the test directory, create a test.js file which requires your module and calls your module as a method.
 
 6. On the command line, run `node test.js`. The message sent to the `console.log` should appear.
+
+
+## Summary
+`Node.js` is a `server-side platform` built on `Google Chrome's` JavaScript Engine (V8 Engine). `Node.js` was developed by `Ryan Dahl` in 2009 and its latest version is v0.10.36. The definition of Node.js as supplied by its `official documentation`
