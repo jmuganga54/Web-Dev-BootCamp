@@ -188,7 +188,7 @@ html {
   box-sizing: inherit;
 }
 ```
-#### (The box model and inline boxes)[https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_box_model_and_inline_boxes]
+#### [The box model and inline boxes](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_box_model_and_inline_boxes)
 In the example below, we have a `<span>` inside a paragraph and have applied a `width`, `height`, `margin`, `border`, and `padding` to it. You can see that the `width` and `height` are `ignored`. The `vertical margin`, `padding`, and `border` are `respected` but they do not change the `relationship` of other content to our `inline box` and so the `padding` and `border` overlaps `other words` in the paragraph. `Horizontal padding`, `margins`, and `borders` are `respected` and `will cause` other `content to move away from the box`.
 
 `CSS FILE`
