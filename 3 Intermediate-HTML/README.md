@@ -25,6 +25,9 @@ The `<table>` HTML element represents tabular data — that is, information pres
 ##### border
 This integer attribute defines, in pixels, the size of the frame surrounding the table. If set to 0, the *frame* attribute is set to void
 
+##### cellspacing
+Add cell spacing on a table .For example `cellspacing=10`
+
 ##### colspan
 This attribute contains a non-negative integer value that indicates for how many columns the cell extends. Its default value is 1. Values higher than 1000 will be considered as incorrect and will be set to the default value (1).
 
@@ -88,7 +91,7 @@ The `<input>` HTML element is used to create interactive controls for web-based 
 
 `When to Use Tables` A table in HTML makes a lot of sense when you want to organize data that would look best in a spreadsheet. An HTML table is a great way to display things such as financial data, calendars, pricing, feature comparison, the nutrition facts information panel, bowling scores, and many other tabular data.
 
-`When NOT to Use Tables`You should never use tables for layout. The thing is that table elements semantically describe tabular data and using them for other purposes is a breach of semantic duty.
+`When NOT to Use Tables` You should never use tables for layout. The thing is that table elements semantically describe tabular data and using them for other purposes is a breach of semantic duty.
 
 The general rule is that the websites should be accessible. One part of accessibility is screen readers which read tables from top to bottom, left to right. With the tables in HTML, the order of how the site is presented is determined by visual choices instead of the accessibility choices. In cases like that, screen readers don’t always work as you’d want them to.
 
