@@ -3,7 +3,80 @@ This section is the continuation of the previous section still working on the Ti
 
 ## Keywords and Notes
 ### The Bootstrap Carousel Part 1 and Part 2
-In this section we we will be building a Carousel which will display images as slideshow.
+In this section we will be building a Carousel which will display images as slideshow.
+```
+  <div id="testimonial-carousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+              <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+              <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+              <em>Pebbles, New York</em>
+         
+        </div>
+        <div class="carousel-item" >
+
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        
+       
+        </div>
+        <!--Next and Back Button-->
+         <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>
+     
+    </div>
+
+```
+### The Bootstrap Card
+In this section we will be building Bootstrap Cards and use it on our project. [Bootstrap Card Doc]()
+
+> HTML Code
+```
+ <section id="features">
+      <div class="row">
+        <div class="col-lg-4 feature-box">
+          <i class="fa-solid fa-circle-check fa-4x icon"></i>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+
+        <div class="col-lg-4 feature-box">
+          <i class="fa-solid fa-bullseye fa-4x icon"></i>
+          <h3>Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+
+        <div class="col-lg-4 feature-box">
+          <i class="fa-solid fa-heart fa-4x icon"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+    </section>
+```
+
+> CSS Code
+```
+/* Pricing */
+#pricing{
+    padding: 100px;
+    text-align:center;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+```
+
 
 
 
