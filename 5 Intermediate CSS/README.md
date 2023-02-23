@@ -490,7 +490,7 @@ color: initial;
 color: revert;
 color: unset;
 ```
-### Font-size()
+### Font-weight
 The `font-weight` CSS property sets the weight (or `boldness`) of the font. The weights available depend on the font-family that is currently set.
 `Syntax`
 ```
