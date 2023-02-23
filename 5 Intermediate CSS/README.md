@@ -162,9 +162,9 @@ In the `standard box model`, if you give a box a `width` and a `height` attribut
 The `actual space` taken up by the `box` will be `410px` wide (`350 + 25 + 25 + 5 + 5`) and `210px` high (`150 + 25 + 25 + 5 + 5`).
 ![The Standard CSS Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/standard-box-model.png)
 
-```
-Note: The margin is not counted towards the actual size of the box — sure, it affects the total space that the box will take up on the page, but only the space outside the box. The box's area stops at the border — it does not extend into the margin.
-```
+
+> Note: The margin is not counted towards the actual size of the box — sure, it affects the total space that the box will take up on the page, but only the space outside the box. The box's area stops at the border — it does not extend into the margin.
+
 
 #### [The alternative CSS box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_alternative_css_box_model)
 CSS had an `alternative box model` introduced some time after the `standard box model`. Using this model, any `width` is the width of the `visible box` on the page, therefore the `content area` `width` is that `width` `minus` the `width for the padding and border`. The same CSS as used above would give the below result (`width` = 350px, `height` = 150px).
