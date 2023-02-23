@@ -148,7 +148,7 @@ The below diagram shows these layers:
 ![CSS Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png)
 
 #### [The standard CSS box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_standard_css_box_model)
-In the `standard box model`, if you give a box a `width` and a `height` attribute, this defines the `width` and `height` of the `content box`. Any `padding` and `border` is then added to that `width` and `height` to get the `t
+In the `standard box model`, if you give a box a `width` and a `height` attribute, this defines the `width` and `height` of the `content box`. Any `padding` and `border` is then added to that `width` and `height` to get the 
 `total size` taken up by the `box`. This is shown in the image below.
 ```
 .box {

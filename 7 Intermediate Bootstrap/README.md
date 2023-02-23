@@ -89,7 +89,7 @@ In this section we will be building Bootstrap Cards and use it on our project. [
 
 ### The CSS Z-index Stacking Order
 
-You can change the order of arrangement on how elements are organized or stacking on each other on the a page using using the html code, or you can use the z-index to change the order of arrangement or stacking order  of elements on the page.
+You can change the order of arrangement on how elements are organized or stacking on each other on the a page using using the html code, or you can use the z-index to change the order of arrangement or stacking order of elements on the page.
 
 `Z-index` only works when things are positioned, this means when element are either positioned `absolute`,`relative`, or `fixed`, not `static` cause this is the same as no position.
 
@@ -103,6 +103,7 @@ The higher the `z-index` value that means the element will be at top, the lower 
 `Note` They are many factors that can affect the order or the stacking of element on the page, just be aware.
 
 > HTML Code
+
 ```
 <div class="red">
     Red
@@ -120,6 +121,7 @@ The higher the `z-index` value that means the element will be at top, the lower 
 ```
 
 > CSS
+
 ```
 div{
     height:100px;
@@ -148,6 +150,40 @@ div{
 }
 ```
 
+### Media Query Breakpoints
 
+Media query breakpoints assist on making the website responsive to the view, it is useful when you want to have a specific tune on way things are arranged on the website, to accommodate mobile or desktop view.
+
+[Media Query Breakpoints](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+
+```
+//template
+@media <type> <feature> {
+
+}
+```
+
+> Example
+
+```
+//html
+<h1>Hello World</h1>
+```
+
+```
+//css
+h1{
+    color:red;
+}
+
+@media (min-width:370px) and (max-width:992px){
+    h1{
+        font-size:10rem;
+        color:black;
+    }
+}
+```
 
 ## Summary
+
+1
