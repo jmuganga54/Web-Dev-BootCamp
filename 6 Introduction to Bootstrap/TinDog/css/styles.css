@@ -126,3 +126,26 @@ p {
 .pricing-column {
   padding: 3% 2%;
 }
+
+/* Cta Section */
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+#cta-heading {
+  font-family: "Montserrat-black", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.social-icon {
+  margin: 20px 10px;
+}
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
