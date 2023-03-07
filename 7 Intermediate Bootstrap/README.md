@@ -183,7 +183,25 @@ h1{
     }
 }
 ```
+### Code Refactor
+> Has a Programmer all the try to write dry code `DON'T REPEAT YOURSELF`, the opposite of this is wet code `WE ENJOY TYPING`. 
 
+This is why we always try to `refactor` our code, on regular basis in order to keep it performant and easy to read(readability)
+
+This mean for example in CSS, try to combine element of the same feature and assign one class to it, on any way that can prevent repeating yourself.
+
+It is important to `refactor` your code and maintaining it, to make it easy to be readable with other people.
+
+When performing Code Refactoring, be aware of the following things.
+1. Readability: make it a number one priority, make your code easy to understand.
+
+2. Modularity: this relates to how easy it's to reuse your code or how easy you can narrow down find issues on your code. For example if part of your website broke down, how easy can it be to narrow down and find the problem on your code.
+
+3. Efficiency: how fast your code run.
+
+4. Length: the length of your code. Writing down you code in a short form. But this may not be the main goal. 
+
+[Code Golf](https://codegolf.stackexchange.com/)
 ## Summary
 
 
