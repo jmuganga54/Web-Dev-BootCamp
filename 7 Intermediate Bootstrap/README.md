@@ -219,6 +219,7 @@ On this section we are going to discuss on how we can combine different css sele
 The following are different strategies that are used to combine and use different css selector.
 
 1. `Multiple Selectors`
+
 Multiple selector involves combining more than one selectors.So instead of writing invidual selector you can use multiple selector, to combined different css selector into a single defining.
 
 > Format
@@ -233,6 +234,7 @@ h1, h2, h3, h3, h4{
 }
 ```
 2. `Hierarchial Selector`
+
 This is another way to organize different selectors, based on their hierarchical structure in html code.
 
 The selectors are ready, from right to left. Note the space between the selectors
@@ -250,6 +252,7 @@ Meaning: Element with `class container` which is containing in a `div`.
 ```
 
 3. `Combined Selector`
+
 This combine selector, all its selectors must be of the same element.
 
 The selectors are ready, from left to right. There is not space between the selectors.
