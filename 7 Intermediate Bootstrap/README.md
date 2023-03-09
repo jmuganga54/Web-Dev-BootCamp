@@ -213,4 +213,60 @@ Less repeating much better structure and more modular code, those are the things
 `Modularity`, being able to narrow / drill down, to a specific section of a page very easily and fast, and fix the problem which occur or change the style of that particular section, without affecting the rest of the website.
 
 Normally, as you go along writing the code, as you realize the opportunities to refactor, you will do there and then, rather than waiting for larger refactoring section, which can be a form of procrastination, which it may not happen.
+
+### Advanced CSS Combining Selector
+On this section we are going to discuss on how we can combine different css selector.
+The following are different strategies that are used to combine and use different css selector.
+
+1. `Multiple Selectors`
+Multiple selector involves combining more than one selectors.So instead of writing invidual selector you can use multiple selector, to combined different css selector into a single defining.
+
+> Format
+```
+selector1, selector2{
+
+}
+
+> Example
+h1, h2, h3, h3, h4{
+
+}
+```
+2. `Hierarchial Selector`
+This is another way to organize different selectors, based on their hierarchical structure in html code.
+
+The selectors are ready, from right to left. Note the space between the selectors
+
+> Format
+```
+selector1 selector2{
+
+}
+> Example
+div .container{
+
+}
+Meaning: Element with `class container` which is containing in a `div`.
+```
+
+3. `Combined Selector`
+This combine selector, all its selectors must be of the same element.
+
+The selectors are ready, from left to right. There is not space between the selectors.
+
+>Format
+```
+selector1.selector2{
+
+}
+or
+selector1#selector2{
+
+}
+> Example
+div.container{
+
+}
+Meaning div with the class container.
+```
 ## Summary
