@@ -272,4 +272,11 @@ div.container{
 }
 Meaning div with the class container.
 ```
+
+### Refactoring our Website Part 2
+On this section we continued to refactor our website, by creating two classes `white-section` and `colored-section`. Both of the class will be applied to section which have white background and colored background. 
+
+This will prevent repetition ourselves.
+
+
 ## Summary
