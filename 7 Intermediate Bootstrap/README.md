@@ -274,9 +274,41 @@ Meaning div with the class container.
 ```
 
 ### Refactoring our Website Part 2
-On this section we continued to refactor our website, by creating two classes `white-section` and `colored-section`. Both of the class will be applied to section which have white background and colored background. 
+On this section we continue to refactor our website, by creating two classes `white-section` and `colored-section`. Both of the class will be applied to section which have white background and colored background accordingly.
 
-This will prevent repetition ourselves.
+This will prevent repetition ourselves by making all the section white section to have the same property of font-color and section with colored background to have the same property of background color + font colar. Instead of putting these properties on different sections.
+
+
+### Advanced CSS Selector Priority
+
+```
+<h1 id="headers" class="title" style ="color:orange"></h1>
+```
+Things to Know about CSS Selector Priority
+
+* `Element tag` have lowest priority of all
+```
+h1{
+  color:red
+}
+```
+
+* Compared to `element tag`, `classes` have higher priority
+```
+.title{
+  color:yellow
+}
+```
+
+* Id have higher priority compared to `element tag` and `classes`
+* `Inline Css` are more specific with higher priority even than `id`, `external css` or `internal css`
+
+> How to Prevent conflicting rules when using selector 
+1. Use`ids` very few time, don't try to use them, when you can use the `classes`. First consider to you the classes instead of going straight to `ids`.
+2. When applying class to your element, only use one class. Instead of having many classes.
+3. Avoid `inline css` at all cost.
+
+
 
 
 ## Summary
