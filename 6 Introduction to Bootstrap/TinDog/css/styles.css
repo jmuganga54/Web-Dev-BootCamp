@@ -14,6 +14,11 @@ h6 {
 p {
   color: #8f8f8f;
 }
+/* Container Section */
+.container-fluid {
+  padding: 7% 5%;
+}
+
 /*Heading*/
 .big-heading {
   font-family: "Montserrat-Black", sans-serif;
@@ -21,9 +26,35 @@ p {
   line-height: 1.5;
   font-weight: 900;
 }
-/* Container Section */
-.container-fluid {
-  padding: 7% 5%;
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.3rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light", sans-serif;
+  font-weight: 300;
+}
+
+/* Button */
+.download-button {
+  margin: 5% 3% 5% 0;
 }
 
 /*Section*/
@@ -43,7 +74,6 @@ p {
   text-align: left;
 }
 
-/* Title image */
 .title-image {
   /* width: 60%; */
   transform: rotate(25deg);
@@ -81,11 +111,6 @@ p {
 }
 
 /*Pricing section*/
-.section-heading {
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: 700;
-}
 .price-text {
   font-size: 3rem;
   line-height: 1.5;
@@ -98,31 +123,6 @@ p {
 
 .icon:hover {
   color: #ff4c68;
-}
-
-/* Navigation Bar */
-.navbar {
-  padding: 0 0 4.3rem;
-}
-
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.nav-item {
-  padding: 0 18px;
-}
-.nav-link {
-  font-size: 1.2rem;
-  font-family: "Montserrat-light", sans-serif;
-  font-weight: 300;
-}
-
-/* Download Button */
-.download-button {
-  margin: 5% 3% 5% 0;
 }
 
 #press {

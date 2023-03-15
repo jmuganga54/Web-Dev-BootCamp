@@ -215,6 +215,7 @@ Less repeating much better structure and more modular code, those are the things
 Normally, as you go along writing the code, as you realize the opportunities to refactor, you will do there and then, rather than waiting for larger refactoring section, which can be a form of procrastination, which it may not happen.
 
 ### Advanced CSS Combining Selector
+
 On this section we are going to discuss on how we can combine different css selector.
 The following are different strategies that are used to combine and use different css selector.
 
@@ -223,6 +224,7 @@ The following are different strategies that are used to combine and use differen
 Multiple selector involves combining more than one selectors.So instead of writing invidual selector you can use multiple selector, to combined different css selector into a single defining.
 
 > Format
+
 ```
 selector1, selector2{
 
@@ -233,6 +235,7 @@ h1, h2, h3, h3, h4{
 
 }
 ```
+
 2. `Hierarchial Selector`
 
 This is another way to organize different selectors, based on their hierarchical structure in html code.
@@ -240,6 +243,7 @@ This is another way to organize different selectors, based on their hierarchical
 The selectors are ready, from right to left. Note the space between the selectors
 
 > Format
+
 ```
 selector1 selector2{
 
@@ -257,7 +261,8 @@ This combine selector, all its selectors must be of the same element.
 
 The selectors are ready, from left to right. There is not space between the selectors.
 
->Format
+> Format
+
 ```
 selector1.selector2{
 
@@ -274,41 +279,49 @@ Meaning div with the class container.
 ```
 
 ### Refactoring our Website Part 2
+
 On this section we continue to refactor our website, by creating two classes `white-section` and `colored-section`. Both of the class will be applied to section which have white background and colored background accordingly.
 
-This will prevent repetition ourselves by making all the section white section to have the same property of font-color and section with colored background to have the same property of background color + font colar. Instead of putting these properties on different sections.
-
+This will prevent repetition ourselves by making all the section white section to have the same property of font-color and section with colored background to have the same property of background color + font color. Instead of putting these properties on different sections, which lead to repetition.
 
 ### Advanced CSS Selector Priority
 
 ```
 <h1 id="headers" class="title" style ="color:orange"></h1>
 ```
-Things to Know about CSS Selector Priority
 
-* `Element tag` have lowest priority of all
+> Things to Know about CSS Selector Priority
+
+- `Element tag` have lowest priority of all
+
 ```
 h1{
   color:red
 }
 ```
 
-* Compared to `element tag`, `classes` have higher priority
+- Compared to `element tag`, `classes` have higher priority
+
 ```
 .title{
   color:yellow
 }
 ```
 
-* Id have higher priority compared to `element tag` and `classes`
-* `Inline Css` are more specific with higher priority even than `id`, `external css` or `internal css`
+- Id have higher priority compared to `element tag` and `classes`
+- `Inline Css` are more specific with higher priority even than `id`, `external css` or `internal css`
 
-> How to Prevent conflicting rules when using selector 
-1. Use`ids` very few time, don't try to use them, when you can use the `classes`. First consider to you the classes instead of going straight to `ids`.
+> How to Prevent conflicting rules when using selector
+
+1. Use`ids` very few times, don't try to use them when you can use the `classes`. First consider to you the classes instead of going straight to `ids`.
 2. When applying class to your element, only use one class. Instead of having many classes.
 3. Avoid `inline css` at all cost.
 
+### Completing the Website
+So it is important to arrange elements on CSS file to make it modular and readable by implementing a better structure. For example on the website that we built we put html element first on css file then, followed by headings, sections, navigational bar, buttons, title, features, testimonials, pricing, cta sections, etc.
 
+This  can be very easy or help when finding a section of the website which have broken or having a problem and trying to fix it. Organizing your CSS file is very important to help with fixing problems and finding issues when arising.
 
+> Note: JUst because something repeat itself, it's not a good enough reason to get lid of it. On some sections it can be very hard to refactor your code, even if you find repeated code.
 
 ## Summary
