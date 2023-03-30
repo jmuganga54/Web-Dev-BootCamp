@@ -165,8 +165,7 @@ So when working on the User Experience, you have to look on the following things
 All the time when dealing with the User Experience, make sure you make your website site. Always keep things simple.
 
 > Consider these images, the first website is complex, which the following image is good design which is simple
-> ![Complex](./imgs/complex.png)
-> ![Simple](./imgs/simple.png)
+> ![Complex](./imgs/complex.png) > ![Simple](./imgs/simple.png)
 
 ### 2. Consistency
 
@@ -176,38 +175,43 @@ This is all about keeping your design consistency + the functionality of the web
 Inconsistency may make a user confused when using a website, when going from one part of the website to another
 
 > Consider this images, which includes different part ot the website lacking consistency
-![Consistency](./imgs/inconsistent.png)
+> ![Consistency](./imgs/inconsistent.png)
 
 ### 3. Reading Patterns
+
 ![reading patterns](./imgs/reading-patterns.png)
 This is all about reading patterns, how humans track web pages, parts they look when browsing on websites.
 
 The following are some of the common reading patterns that humans us
+
 #### F Layout PATTERN
+
 This is one of the common reading pattern that humans use when browsing on the website, see the diagram below.
 ![F pattern](./imgs/f_pattern.png)
 
 > Example of F layout pattern
-![Example of F layout pattern](./imgs/example_flayout.png)
+> ![Example of F layout pattern](./imgs/example_flayout.png)
 
 #### Z Layout PATTERN
+
 Another reading pattern is called Z-layout pattern. User start reading the website from left to right, zigzag then all the way to the bottom of the website.
 ![Z layout pattern](./imgs/z_layout_pattern.png)
 
 Most common used for video content website or enabling a user to read the website a lot faster.
 
 > Example of Z layout pattern is facebook login page, see the image below.
-![Example Z layout pattern](./imgs/example_z_layout.png)
+> ![Example Z layout pattern](./imgs/example_z_layout.png)
 
 > Note each Layout pattern depends on the type of the website.
 
 ### 4. All Platform Design
+
 This is all about designing a website that scale well on mobile and vice versa, this is what is called `RESPONSIVE DESIGN`, designing a website that will scale well to each view port.
 
-Looking good on mobile but also on wide screen  such as desktop, tablets, tv, etc.
+Looking good on mobile but also on wide screen such as desktop, tablets, tv, etc.
 
 > The example below shows good and bad design, not following responsive design
-![Responsive Design](./imgs/responsive_design.png)
+> ![Responsive Design](./imgs/responsive_design.png)
 
 When working on responsive design, please avoid putting a lot of empty spaces around your design. See the image below.
 ![Empty Spaces](./imgs/empty_space.png)
@@ -215,12 +219,13 @@ When working on responsive design, please avoid putting a lot of empty spaces ar
 Also avoid having so much banner on your website, this makes your content on your website very small. Scaling too much on images is also a problem, so avoid too much scaling.
 
 > The left images shows too much banner anr the right image too much scaling on the image.
-![Too much banner and too much scaling](./imgs/scaling.png)
+> ![Too much banner and too much scaling](./imgs/scaling.png)
 
 > Test
-To achieve all the above, you need to put your website on testing, you can do this buy asking your colleagues or friend assisting you on testing.
+> To achieve all the above, you need to put your website on testing, you can do this buy asking your colleagues or friend assisting you on testing.
 
 ### 5. Don't Use your powers to Evil
+
 ![Dont do evil](./imgs/dont_do_evil.png)
 Some designers use the knowledge they know about Psychology, UX Design and User Interface Design to do bad things.
 
@@ -230,9 +235,18 @@ Dark UX pattern is when designers create an experience that pushes users in a di
 [Read More](https://uxdesign.cc/10-evil-types-of-dark-ux-patterns-f5a408c43c62)
 
 
+### Web Design in Practice Let apply what we have learnt
+On this section is all about using the knowledge that we have learnt to practically design a website user interface.
+
+This is the final output of the practice.
+[Design of the website](https://www.canva.com/design/DAFeqdvzbxc/0ve6GvWmMRVOcPmxelEs4w/view?website#4:a-hotel)
+
+The tool used to design this website is [Canvas](https://www.canva.com/)
+
+> Other resources
+[Daily UI](https://www.dailyui.co/) - which give you a task to design every day for 100 days
+
+[Collect UI](https://collectui.com/) - inspiration of different website design.
 
 
 
-
-
-## Summary
