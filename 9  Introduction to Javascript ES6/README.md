@@ -32,8 +32,28 @@ If you are wondering were does this code originated, you can check the documenta
 
 As you can see on `alert function` above we use `double quotes`. Javascript allow the use of `Single or double quotes`. But it is very important to have one way of writing your code, to make your code easy to read, but also having consistency way of writing  you're code.
 
+`Note`: Any string when written using Javascript must be `single or double` quoted
+
 > Check this to learn more on better way to write consistent Js
 [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js/)
 
+## Data Types
+Is the way to classify data to tell a computer how the program tend to use the data.
+
+There are different data types in Javascript. The following are some of the data types which we will start with.
+
+```
+String - just string of characters. Example "Hello World"
+Number - just numeric value. Example: 123
+Boolean - true or false
+```
+The function `typeOf()`, can be used to check the data type of any data.
+
+```
+typeof(123)
+//Expected output: number
+typeof("Hello World")
+//Expected output: string
+```
 
 ## Summary
