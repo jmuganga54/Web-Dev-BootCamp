@@ -1,15 +1,19 @@
 ## Topic
+
 In this section we will learn about Javascript. Javascript was created by `Brendan Eich`, this language can run on client side but also on server side.
 
 It is Interpreted language not a complied language.
 
 `ECMAScript` provide standard of Javascript. `ECMA` stands for European Computer Manufacture Association.
 
-Javascript provide more intractability  when working with HTML. Most website now days depend on Javascript for its intractability and functionality. Javascript is one on the most used programming language.
+Javascript provide more intractability when working with HTML. Most website now days depend on Javascript for its intractability and functionality. Javascript is one on the most used programming language.
 
 There is a big different between `Java` and `JavaScript`. Java is complied language while Javascript is Interpreted language.
 
+[The difference btn Interpreters and Compilers](https://www.youtube.com/watch?v=_C5AHaS1mOA)
+
 ## Keywords & Notes
+
 ## Javascript Alerts Adding Behavior to Website
 
 On this section we will starting adding behaviors using Javascript.
@@ -23,6 +27,7 @@ But the better way to write Javascript code on browser is to use `Snipping edito
 ```
 alert('Hello')
 ```
+
 This is the first line of Javascript which we will start to learn, which will provide a pop up message on the screen.
 ![alert](./imgs/alert.png)
 
@@ -30,14 +35,15 @@ The about shows the syntax of writing the `alert function`, syntax is the same a
 
 If you are wondering were does this code originated, you can check the documentation of it through [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert), this website provide the documentation of the language, its methods, properties and other features of the language.
 
-As you can see on `alert function` above we use `double quotes`. Javascript allow the use of `Single or double quotes`. But it is very important to have one way of writing your code, to make your code easy to read, but also having consistency way of writing  you're code.
+As you can see on `alert function` above we use `double quotes`. Javascript allow the use of `Single or double quotes`. But it is very important to have one way of writing your code, to make your code easy to read, but also having consistency way of writing you're code.
 
 `Note`: Any string when written using Javascript must be `single or double` quoted
 
 > Check this to learn more on better way to write consistent Js
-[Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js/)
+> [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js/)
 
 ## Data Types
+
 Is the way to classify data to tell a computer how the program tend to use the data.
 
 There are different data types in Javascript. The following are some of the data types which we will start with.
@@ -47,6 +53,7 @@ String - just string of characters. Example "Hello World"
 Number - just numeric value. Example: 123
 Boolean - true or false
 ```
+
 The function `typeOf()`, can be used to check the data type of any data.
 
 ```
@@ -54,6 +61,21 @@ typeof(123)
 //Expected output: number
 typeof("Hello World")
 //Expected output: string
+```
+
+## Javascript Variables
+`Variable` is a way to commit/ store piece of data in the memory.
+
+> Below is how the variable is defined and assigned a piece of data
+![How to define a varialbe](./imgs/variable.png)
+
+> Example of variable
+```
+let myName = "joseph"
+let yourName = prompt('What is your name')
+alert(`My name is ${myName}, enjoy my notes ${yourName}`)
+
+//Expected output:My name is joseph, enjoy my notes Peter
 ```
 
 ## Summary
