@@ -131,5 +131,17 @@ a is 8
 b is 3
 ```
 
+## Naming and Naming Conventions for Javascript Variable
+
+How to name variable, best practice
+1. Give a variable a meaningfully name. Example getName, instead untitled123
+2.You can't name a variable using reserved keyword. Example `var`, `let`, `const`, etc
+3. You can't name a variable by beginning with a `number`, but a variable can contain a number. Example `123school` instead `school123`
+4. Variable name can't contain space, no spaces. Example `my school`
+5. Variable name can contain letters (`abc..`), dollar sign (`$`) and underscore (`_`), no any other symbol is valid to be used to name a variable. Example `my-name`
+
+It's recommended to use `camel-case` when naming you variable.
+
+
 
 ## Summary
