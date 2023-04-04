@@ -78,4 +78,58 @@ alert(`My name is ${myName}, enjoy my notes ${yourName}`)
 //Expected output:My name is joseph, enjoy my notes Peter
 ```
 
+## Javascript Variable Exercise 
+![Variable Exercise](./imgs/variable_exercise.png)
+>Rule to solve the problem
+![Rule to solve the problem](./imgs/rules_to_solve.png)
+
+>My try
+```
+function test() {
+  var a = "3";
+  var b = "8";
+
+  //Don't change the code above
+  let temp = a;
+  a = b
+  b = temp;
+
+  //Don't change the code below
+  console.log("a is " + a);
+  console.log("b is " + b);
+}
+
+
+test()
+//Expected output
+a is 8
+b is 3
+```
+
+## Javascript Variable Exercise Solution
+> In Programming, Language Syntax is very easily, the hard/difficult part is setting up the logic.
+
+```
+function test() {
+  var a = "3";
+  var b = "8";
+
+  //Don't change the code above
+  var c = a;
+  a = b
+  b = c;
+
+  //Don't change the code below
+  console.log("a is " + a);
+  console.log("b is " + b);
+}
+
+
+test()
+//Expected output
+a is 8
+b is 3
+```
+
+
 ## Summary
