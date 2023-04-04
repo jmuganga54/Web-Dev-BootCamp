@@ -142,6 +142,20 @@ How to name variable, best practice
 
 It's recommended to use `camel-case` when naming you variable.
 
+## String Concatenation
+This is the way of combining two or more string together to form a single string. You can achieve this by using `+` plus sign.
+
+```
+"a" + "" + "b" = ab
+alert("Hello" + " " +  "World")
+//Expected output: Hello World
+
+let firstName = "Joseph"
+let lastName = "Muganga"
+
+alert(firstName + " " + lastName)
+//Expected output: Joseph Muganga
+```
 
 
 ## Summary
