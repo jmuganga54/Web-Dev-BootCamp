@@ -184,4 +184,35 @@ console.log('You have written ' + characterWritten.length + ' characters' +  ','
 //Expected output: You have written 109 characters, you have 131 characters left
 ```
 
+## Slicing and Extracting Parts of a String
+`slice(x,y`)` This function works with String variable. It is used to slice a string of characters.
+
+>Syntax
+```
+let myName = 'Joseph`
+myName.slice(0,1)
+/*
+*myName.slice(startPosition, endPosition)
+*myName.slice(0,1)
+* This means slice *myName* string starting from position 0 and end up without including positon 1, so the function will return `J`
+*/
+
+//Expected output: J
+```
+
+Always remember Programmers always start to count from position 0. If you want to know the number of character which will be return, what to do is  take `UpperBound (endPosition) - lowerBound(startPosition), for our case (1-0) = 1, only one character will be returned.
+
+> Challenge: Write a program which will prompt a user to enter a string of characters, then it will return an alert if the character exceed 140, and return the slice characters which have been trimmed.
+
+```
+//myTry
+let myMessage = prompt('Enter your Message')
+let messageLength = myMessage.length
+let trimmedMessage = myMessage.slice(0,messageLength)
+alert('This is trimmed message: ' + trimmedMessage)
+
+// Short way of writing the above code.
+alert( prompt('Enter your Message').slice(0,140))
+```
+
 ## Summary
