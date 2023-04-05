@@ -157,5 +157,31 @@ alert(firstName + " " + lastName)
 //Expected output: Joseph Muganga
 ```
 
+## String Length and Retrieving the Number of Characters
+Javascript String, have a property called `length` which give the number of characters that the string have.
+
+Comment in Javascript
+```
+// - Is used for single line comment.
+/* comment */ - Is used for multiple line comment.
+```
+
+```
+let myName = 'Joseph'
+console.log(myName.length)
+
+//Expected output: 6
+```
+
+> Challenge: Write a program that will prompt a usert to enter a string of character, the program will count the character and return how many number of character have been written, and how many characters  left (frm 240 character)
+
+```
+//myTry
+let characterWritten = prompt('Enter your message')
+let characterLeft = 240 - characterWritten.length
+console.log('You have written ' + characterWritten.length + ' characters' +  ',' + ' you have ' + characterLeft + ' characters left' )
+
+//Expected output: You have written 109 characters, you have 131 characters left
+```
 
 ## Summary
