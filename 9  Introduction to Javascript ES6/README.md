@@ -64,12 +64,14 @@ typeof("Hello World")
 ```
 
 ## Javascript Variables
+
 `Variable` is a way to commit/ store piece of data in the memory.
 
 > Below is how the variable is defined and assigned a piece of data
-![How to define a varialbe](./imgs/variable.png)
+> ![How to define a varialbe](./imgs/variable.png)
 
 > Example of variable
+
 ```
 let myName = "joseph"
 let yourName = prompt('What is your name')
@@ -78,12 +80,15 @@ alert(`My name is ${myName}, enjoy my notes ${yourName}`)
 //Expected output:My name is joseph, enjoy my notes Peter
 ```
 
-## Javascript Variable Exercise 
-![Variable Exercise](./imgs/variable_exercise.png)
->Rule to solve the problem
-![Rule to solve the problem](./imgs/rules_to_solve.png)
+## Javascript Variable Exercise
 
->My try
+![Variable Exercise](./imgs/variable_exercise.png)
+
+> Rule to solve the problem
+> ![Rule to solve the problem](./imgs/rules_to_solve.png)
+
+> My try
+
 ```
 function test() {
   var a = "3";
@@ -107,6 +112,7 @@ b is 3
 ```
 
 ## Javascript Variable Exercise Solution
+
 > In Programming, Language Syntax is very easily, the hard/difficult part is setting up the logic.
 
 ```
@@ -134,15 +140,17 @@ b is 3
 ## Naming and Naming Conventions for Javascript Variable
 
 How to name variable, best practice
+
 1. Give a variable a meaningfully name. Example getName, instead untitled123
-2.You can't name a variable using reserved keyword. Example `var`, `let`, `const`, etc
-3. You can't name a variable by beginning with a `number`, but a variable can contain a number. Example `123school` instead `school123`
-4. Variable name can't contain space, no spaces. Example `my school`
-5. Variable name can contain letters (`abc..`), dollar sign (`$`) and underscore (`_`), no any other symbol is valid to be used to name a variable. Example `my-name`
+   2.You can't name a variable using reserved keyword. Example `var`, `let`, `const`, etc
+2. You can't name a variable by beginning with a `number`, but a variable can contain a number. Example `123school` instead `school123`
+3. Variable name can't contain space, no spaces. Example `my school`
+4. Variable name can contain letters (`abc..`), dollar sign (`$`) and underscore (`_`), no any other symbol is valid to be used to name a variable. Example `my-name`
 
 It's recommended to use `camel-case` when naming you variable.
 
 ## String Concatenation
+
 This is the way of combining two or more string together to form a single string. You can achieve this by using `+` plus sign.
 
 ```
@@ -158,9 +166,11 @@ alert(firstName + " " + lastName)
 ```
 
 ## String Length and Retrieving the Number of Characters
+
 Javascript String, have a property called `length` which give the number of characters that the string have.
 
 Comment in Javascript
+
 ```
 // - Is used for single line comment.
 /* comment */ - Is used for multiple line comment.
@@ -173,7 +183,7 @@ console.log(myName.length)
 //Expected output: 6
 ```
 
-> Challenge: Write a program that will prompt a usert to enter a string of character, the program will count the character and return how many number of character have been written, and how many characters  left (frm 240 character)
+> Challenge: Write a program that will prompt a user to enter a string of character, the program will count the character and return how many number of character have been written, and how many characters left (frm 240 character)
 
 ```
 //myTry
@@ -185,9 +195,11 @@ console.log('You have written ' + characterWritten.length + ' characters' +  ','
 ```
 
 ## Slicing and Extracting Parts of a String
+
 `slice(x,y`)` This function works with String variable. It is used to slice a string of characters.
 
->Syntax
+> Syntax
+
 ```
 let myName = 'Joseph`
 myName.slice(0,1)
@@ -200,7 +212,7 @@ myName.slice(0,1)
 //Expected output: J
 ```
 
-Always remember Programmers always start to count from position 0. If you want to know the number of character which will be return, what to do is  take `UpperBound (endPosition) - lowerBound(startPosition), for our case (1-0) = 1, only one character will be returned.
+Always remember Programmers always start to count from position 0. If you want to know the number of character which will be return, what to do is take `UpperBound (endPosition) - lowerBound(startPosition), for our case (1-0) = 1, only one character will be returned.
 
 > Challenge: Write a program which will prompt a user to enter a string of characters, then it will return an alert if the character exceed 140, and return the slice characters which have been trimmed.
 
@@ -215,4 +227,37 @@ alert('This is trimmed message: ' + trimmedMessage)
 alert( prompt('Enter your Message').slice(0,140))
 ```
 
+## Challenging Changing Casing in Text
+In Javascript, you can change the case of the word, the built in function you can use are `word.toLowerCase()` and `word.toUpperCase()`, all this function return a word with a changed case.
+
+```
+const name = 'Joseph'
+const nameToLowerCase = name.toLowerCase()
+const nameToUpperCase = name.toUpperCase()
+
+console.log(nameToLowerCase)
+console.log(nameToUpperCase)
+
+//Expected outpu:
+joseph
+JOSEPH
+```
+
+`Challenge` Write a program which will prompt the user to enter his/her first name, then the program will return `Hello, firstName`, the value of firstName must start with the capital letter, example `Hello, Joseph`.
+
+`My try`
+
+```
+const name = prompt("Please enter your first name")
+//capitalize first character, after slice(0,1)
+const firstCharName = name.slice(0,1).toUpperCase()
+//lowercase to the rest of characters, after slice (1, name.length)
+const theRestChar = name.slice(1,name.length).toLowerCase()
+const capitalizedName = firstCharName + theRestChar
+alert('Hello, ' + capitalizedName )
+
+//Expected output
+Hello, Joseph
+
+```
 ## Summary
