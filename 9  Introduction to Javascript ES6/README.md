@@ -248,7 +248,7 @@ JOSEPH
 `My try`
 
 ```
-const name = prompt("Please enter your first name")
+const name = prompt("Please enter your first name") //joSEPH
 //capitalize first character, after slice(0,1)
 const firstCharName = name.slice(0,1).toUpperCase()
 //lowercase to the rest of characters, after slice (1, name.length)
@@ -258,6 +258,38 @@ alert('Hello, ' + capitalizedName )
 
 //Expected output
 Hello, Joseph
+```
+
+## Basic Arithmetic and the Modulo Operator in Javascript
+In Javascript it is possible to do arithmetic operations, the following are arithmetic operation that can be done in Javascript
 
 ```
+//Addition
+let a = 3 + 3 
+//Subtraction
+let b = 10 - 2
+//Multiplication
+let c = 10 * 10
+//Division
+let d = 10/5 
+//Modulo - which return the remainder after division
+let e = 10/3 // will retun 1
+```
+
+All the arithmetic operation are performed using the predefined precedence. For example Multiplication must be performed first before addition, etc, like BODMAS in mathematics, to simplify this use the brackets.
+
+`Challenge` Write a program which will calculate the humanAge, the formula to use to calculate humanAge is `humanAGe = (dogAge - 2) * 4 + 21`, so the program will prompt the user to enter `dogAge` then it will calculate the `humanAge`.
+
+`My try`
+
+```
+let dogAge = prompt('Enter your dog Age') //10
+let humanAge = (dogAge - 2) * 4 + 21
+alert('Your dog is ' + humanAge + ' years old in human years.');
+
+//Expected output
+Your dog is 53 years old in human years.
+
+```
+
 ## Summary
