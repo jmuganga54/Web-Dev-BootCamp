@@ -289,7 +289,44 @@ alert('Your dog is ' + humanAge + ' years old in human years.');
 
 //Expected output
 Your dog is 53 years old in human years.
+```
+## Increment and Decrement Expression
+So far we have been using arithmetic operation which is also common in mathematics. The Following are different way we can do arithmetic in Javascript
 
+`Increment` - adding by 1 or any number
+```
+let x = 5
+x = x + 1 // 6
+```
+`The above is the same as`
+```
+let x = 5
+x++ //6
 ```
 
+`Decrement` - substraction by 1 or any number
+```
+let y = 6
+y = y - 1 // 5
+```
+
+`The above is the same as`
+```
+let y = 6
+y-- //5
+```
+
+This is what we call increment and decrement in Javascript. This short form can also be used for `*,+,-,/`, multiplication, addition, subtraction and division.
+
+`For example`
+```
+let s = 5
+s = s * 5 //25
+```
+
+`The above is the same as` 
+```
+let s = 5
+s *= 5 //25
+```
 ## Summary
