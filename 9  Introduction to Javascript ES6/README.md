@@ -329,4 +329,87 @@ s = s * 5 //25
 let s = 5
 s *= 5 //25
 ```
+
+## Function Part 1 Creating and Calling Functions
+`Function` is a way that allow to write a series of instruction and package it in a block of code, which tells a computer what to do/perform.
+
+`OR in other words` Is a set by step instruction which tells the computer what to do. For example if you what to get milk from a store, you can write a function which tells the computer each step which must be performed in order to get milk from a store.
+
+![Function](./imgs/function.png)
+
+> Creating a function 
+A function is creating by following a below syntax
+```
+function nameOfFunction (){
+  // what to be performed
+}
+//function is a keyword which indicate this is a function
+`
+For Example
+function getMilk(){
+  //what to be performed
+}
+```
+
+> Calling a function 
+If you want to use the function, you are supposed to call it. Calling a function just write its name and parenthesis
+
+```
+getMilk()
+```
+![Creating and Calling a function](./imgs/creating_and_calling_a_function.png)
+
+> Tool to practice function
+[Stanford Karel](https://stanford.edu/~cpiech/karel/ide.html)
+
+```
+This is one of the solutions for the Karel Check Board Challenge, there are many ways of solving this problem, as long as you managed to achieve the pattern specified then you have succeeded!
+
+function main(){
+   beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+}
+
+function goUpTurnRight() {
+   turnRight();
+   move();
+   turnRight();
+}
+
+function goUpTurnLeft() {
+   turnLeft();
+   move();
+   turnLeft();
+}
+
+function beepersRight() {
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();  
+}
+
+function beepersLeft() {
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+}
+```
+
+`Function` allow us to write code that is dry, meaning removing repetition by creating module of code, which make our code shorter and allow us to identify problems easier if does occurs.
+
+
 ## Summary
