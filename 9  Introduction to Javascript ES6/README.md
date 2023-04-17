@@ -228,6 +228,7 @@ alert( prompt('Enter your Message').slice(0,140))
 ```
 
 ## Challenging Changing Casing in Text
+
 In Javascript, you can change the case of the word, the built in function you can use are `word.toLowerCase()` and `word.toUpperCase()`, all this function return a word with a changed case.
 
 ```
@@ -261,17 +262,18 @@ Hello, Joseph
 ```
 
 ## Basic Arithmetic and the Modulo Operator in Javascript
+
 In Javascript it is possible to do arithmetic operations, the following are arithmetic operation that can be done in Javascript
 
 ```
 //Addition
-let a = 3 + 3 
+let a = 3 + 3
 //Subtraction
 let b = 10 - 2
 //Multiplication
 let c = 10 * 10
 //Division
-let d = 10/5 
+let d = 10/5
 //Modulo - which return the remainder after division
 let e = 10/3 // will retun 1
 ```
@@ -290,27 +292,34 @@ alert('Your dog is ' + humanAge + ' years old in human years.');
 //Expected output
 Your dog is 53 years old in human years.
 ```
+
 ## Increment and Decrement Expression
+
 So far we have been using arithmetic operation which is also common in mathematics. The Following are different way we can do arithmetic in Javascript
 
 `Increment` - adding by 1 or any number
+
 ```
 let x = 5
 x = x + 1 // 6
 ```
+
 `The above is the same as`
+
 ```
 let x = 5
 x++ //6
 ```
 
 `Decrement` - substraction by 1 or any number
+
 ```
 let y = 6
 y = y - 1 // 5
 ```
 
 `The above is the same as`
+
 ```
 let y = 6
 y-- //5
@@ -319,26 +328,30 @@ y-- //5
 This is what we call increment and decrement in Javascript. This short form can also be used for `*,+,-,/`, multiplication, addition, subtraction and division.
 
 `For example`
+
 ```
 let s = 5
 s = s * 5 //25
 ```
 
-`The above is the same as` 
+`The above is the same as`
+
 ```
 let s = 5
 s *= 5 //25
 ```
 
 ## Function Part 1 Creating and Calling Functions
+
 `Function` is a way that allow to write a series of instruction and package it in a block of code, which tells a computer what to do/perform.
 
 `OR in other words` Is a set by step instruction which tells the computer what to do. For example if you what to get milk from a store, you can write a function which tells the computer each step which must be performed in order to get milk from a store.
 
 ![Function](./imgs/function.png)
 
-> Creating a function 
-A function is creating by following a below syntax
+> Creating a function
+> A function is creating by following a below syntax
+
 ```
 function nameOfFunction (){
   // what to be performed
@@ -351,16 +364,17 @@ function getMilk(){
 }
 ```
 
-> Calling a function 
-If you want to use the function, you are supposed to call it. Calling a function just write its name and parenthesis
+> Calling a function
+> If you want to use the function, you are supposed to call it. Calling a function just write its name and parenthesis
 
 ```
 getMilk()
 ```
+
 ![Creating and Calling a function](./imgs/creating_and_calling_a_function.png)
 
 > Tool to practice function
-[Stanford Karel](https://stanford.edu/~cpiech/karel/ide.html)
+> [Stanford Karel](https://stanford.edu/~cpiech/karel/ide.html)
 
 ```
 This is one of the solutions for the Karel Check Board Challenge, there are many ways of solving this problem, as long as you managed to achieve the pattern specified then you have succeeded!
@@ -396,7 +410,7 @@ function beepersRight() {
    putBeeper();
    move();
    move();
-   putBeeper();  
+   putBeeper();
 }
 
 function beepersLeft() {
@@ -411,5 +425,32 @@ function beepersLeft() {
 
 `Function` allow us to write code that is dry, meaning removing repetition by creating module of code, which make our code shorter and allow us to identify problems easier if does occurs.
 
+> Note
+> `console.log()` output, most of the time is not for the user but for the developer to identify problems or to figure some part of the code how it works
 
+## Function Part 2 Parameters and Arguments
+In Javascript, it is possible to write a function which will take an input. 
+![Function inputs](./imgs/function_inputs.png)
+
+For example, from our previous example, we wrote a function which was able to getMilk(), now we can improve the function by providing how many bottle of milk should the function get.
+![Parameters](./imgs/parameters_and_arguments.png)
+
+## Life Weeks Coding Challenge
+![Challenge](./imgs/life_weeks_coding_challenges.png)
+
+```
+//My try to the Challenge
+const lifeInWeeks = function (age){
+  let yearsRemaining = 90 - age;
+  let daysRemaining = Math.floor(yearsRemaining*365);
+  let weeksRemaining = Math.floor(yearsRemaining*52);
+  let monthRemaining = Math.floor(yearsRemaining*12);
+
+  return `You have ${daysRemaining} days, ${weeksRemaining} weeks, and ${monthRemaining} months left`
+}
+
+lifeInWeeks(30)
+
+//Expected output: You have 21900 days, 3120 weeks, and 720 months left
+```
 ## Summary
