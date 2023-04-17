@@ -449,8 +449,35 @@ const lifeInWeeks = function (age){
   return `You have ${daysRemaining} days, ${weeksRemaining} weeks, and ${monthRemaining} months left`
 }
 
-lifeInWeeks(30)
+console.log(lifeInWeeks(30))
 
 //Expected output: You have 21900 days, 3120 weeks, and 720 months left
 ```
+
+## Function part 3 Outputs and Return values
+When writing functions, we can be able to return the value after the function process the inputs or after the function perform a certain task.
+![Return of a function](./imgs/return_function.png)
+
+This return values can be stored on another variable or used on another function.For example on below function.
+![Return function Example](./imgs/return_function_example.png)
+
+This can also improve or provide way to write dry code, with less repetition.
+
+## Challenge Create a BMI Calculator
+![BMI Challenge Calculator](./imgs/bmi_challenge.png)
+
+```
+//My try
+ const bmi = function(weight, height){
+   return Math.round(weight/Math.pow(height,2));
+   
+ }
+
+console.log(bmi(65,1.8))
+
+//Expected output: 20
+
+```
+
+
 ## Summary
