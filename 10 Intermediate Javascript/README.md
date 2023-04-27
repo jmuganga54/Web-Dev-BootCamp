@@ -27,8 +27,41 @@ const genLovePercent = ()=> {
 }
 
 console.log(genLovePercent())
+
+//Expected output: The love percentage between Joseph and Hagari is 95%
 ```
 
+## Control Statement using IfElse Conditional & Logic
+In this section we will learn about `Control flow`, which is the way to control the flow of the code, depending on the current condition. 
+
+For example is train tracker is open, go straight, but if it is closed, use the alternative root.
+![Control Flow](./img/control_flow.png)
+
+>Challenge
+Improve the code of the previous love challenge, if their love percentage is greater than 70, return the statement saying `Your love score is loveScore%, You love each other like kanye love kanye` else return `Your love score is lovescore%`
+
+```
+//My try on this
+let firstName = prompt('Enter your first Name')
+let partnerName = prompt('Enter the name of your partner')
+
+const genLovePercent = ()=> {
+  let loveScore = Math.floor(Math.random() * 100) + 1
+
+  if(loveScore > 70){
+   return `The love percentage between ${firstName} and ${partnerName} is ${loveScore}%, you love each other like kanye love kanye`
+  }else{
+   return `The love percentage between ${firstName} and ${partnerName} is ${loveScore}%`
+  }
+  
+  
+}
+
+console.log(genLovePercent())
+
+
+//Expected output: The love percentage between Peter and Anna is 97%, you love each other like kanye love kanye
+```
 
 
 
