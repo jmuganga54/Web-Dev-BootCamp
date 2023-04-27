@@ -429,13 +429,15 @@ function beepersLeft() {
 > `console.log()` output, most of the time is not for the user but for the developer to identify problems or to figure some part of the code how it works
 
 ## Function Part 2 Parameters and Arguments
-In Javascript, it is possible to write a function which will take an input. 
+
+In Javascript, it is possible to write a function which will take an input.
 ![Function inputs](./imgs/function_inputs.png)
 
 For example, from our previous example, we wrote a function which was able to getMilk(), now we can improve the function by providing how many bottle of milk should the function get.
 ![Parameters](./imgs/parameters_and_arguments.png)
 
 ## Life Weeks Coding Challenge
+
 ![Challenge](./imgs/life_weeks_coding_challenges.png)
 
 ```
@@ -455,6 +457,7 @@ console.log(lifeInWeeks(30))
 ```
 
 ## Function part 3 Outputs and Return values
+
 When writing functions, we can be able to return the value after the function process the inputs or after the function perform a certain task.
 ![Return of a function](./imgs/return_function.png)
 
@@ -464,13 +467,14 @@ This return values can be stored on another variable or used on another function
 This can also improve or provide way to write dry code, with less repetition.
 
 ## Challenge Create a BMI Calculator
+
 ![BMI Challenge Calculator](./imgs/bmi_challenge.png)
 
 ```
 //My try
  const bmi = function(weight, height){
    return Math.round(weight/Math.pow(height,2));
-   
+
  }
 
 console.log(bmi(65,1.8))
@@ -478,6 +482,5 @@ console.log(bmi(65,1.8))
 //Expected output: 20
 
 ```
-
 
 ## Summary
