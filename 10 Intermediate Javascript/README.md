@@ -63,6 +63,40 @@ console.log(genLovePercent())
 //Expected output: The love percentage between Peter and Anna is 97%, you love each other like kanye love kanye
 ```
 
+## Comparators and Equality
+`Comparators and Equality` are sign which help in checking the equality of values,
+```
+=== Is equal to
+!== Is not equal to 
+> Is greater than
+< Is lesser than
+>= Is greater or equal to
+<= Is lesser or equal to
+```
+
+The difference between `==` and `===` is that , the triple equal sign check for equality of type and values.
+
+```
+let a = 1;
+let b = "1"
+typeof(a)
+typeof(b)
+//Expected output:
+number
+string
+```
+
+```
+let a = 1;
+let b = "1"
+
+if(a===b){
+console.log('yes')
+}else{
+console.log('no')
+}
+//Expected output: no
+```
 
 
 
