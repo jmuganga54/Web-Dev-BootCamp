@@ -135,21 +135,72 @@ const genLovePercent = ()=> {
   if(loveScore > 70){
    return `The love percentage between ${firstName} and ${partnerName} is ${loveScore}%, you love each other like kanye love kanye`
   }
-
   if(loveScore > 30 && loveScore <= 70){
     return `The love percentage between ${firstName} and ${partnerName} is ${loveScore}%`
 
   }
-
   if(loveScore <= 30){
      return `The love percentage between ${firstName} and ${partnerName} is ${loveScore}%, you go together like oil and water`
   }
-
 }
 
 console.log(genLovePercent())
 
 //Expected output: The love percentage between Joseph and Anneth is 60%
+```
+
+## Leap Year Challenge
+
+![Leap Year Challenge](./img/leap_challenge.png)
+
+```
+//My try on the Challenge
+const isLeap = function (year){
+
+  if(year%4===0){
+    if(year%100===0){
+      if(year%400===0){
+        return `${year} is leap year`
+
+      }else{
+         return `${year} is not leap year`
+      }
+
+    }else{
+        return `${year} is leap year`
+
+    }
+
+  }else{
+     return `${year} is not leap year`
+  }
+
+}
+
+
+
+
+console.log(isLeap(2016))
+console.log(isLeap(2020))
+console.log(isLeap(2024))
+
+
+console.log(isLeap(2100))
+console.log(isLeap(2200))
+
+
+console.log(isLeap(2000))
+console.log(isLeap(2400))
+
+//Expected output:
+
+2016 is leap year
+2020 is leap year
+2024 is leap year
+2100 is not leap year
+2200 is not leap year
+2000 is leap year
+2400 is leap year
 ```
 
 ## Summary
