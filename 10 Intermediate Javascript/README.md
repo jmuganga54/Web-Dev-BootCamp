@@ -203,4 +203,35 @@ console.log(isLeap(2400))
 2400 is leap year
 ```
 
+## Collections Working with Javascript Arrays
+`Array` is way of storing collections of related items in the same container.
+
+```
+//Creating an Array
+let guestList = ['Joseph','Anneth','Peter']
+
+//Retrieving element in an array, [0] position
+guestList[0]
+
+//Using Array function on an array, return boolean
+guestList.includes('Joseph')
+
+```
+
+> Challenge
+Create a program array with list of guest, prompt the user to enter their name, a program with check if the name is in the list, then return `Welcome` or `Your name is not in the list`
+
+```
+//my try
+let nameUser = prompt('Enter your name for verfication').toLowerCase()
+
+let guestList = ['joseph', 'anneth', 'peter']
+
+if(guestList.includes(nameUser)){
+  console.log(`Welcome, ${nameUser}`)
+}else{
+  console.log(`Sorry ${nameUser}, not on the guest list`)
+}
+
+```
 ## Summary
