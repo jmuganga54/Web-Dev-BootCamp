@@ -271,9 +271,10 @@ FizzBuzz()
 ```
 
 > Tips
-The order of if statements matters a lot, so it is very important to make such you order the if statement very well.
+> The order of if statements matters a lot, so it is very important to make such you order the if statement very well.
 
 ## Who's Buying Lunch? Code Challenge
+
 ![Lunch](./img/lunch.png)
 
 ```
@@ -292,6 +293,32 @@ buyingLunch(['Angela','Ben','Jenny','Michael','Chloe'])
 //Expected output: 'Chloe is going to buy lunch today'
 ```
 
+## Control Statement While Loops
 
+![While Loop](./img/while_loops.png)
+![While loops how it works](./img/while_loop_works.png)
+
+### Challenge `Lyric of the Song 99 Bottles of Beer`
+
+Write a program which will print the following
+![Beer](./img/better.png)
+
+```
+//my try
+const bottlesBeer = function (numberBeerBootles){
+  let i = numberBeerBootles
+while(i >=1){
+  i == 1 ? console.log(`${i} bottle of beer on the wall, ${i} bottle of bear.\n Take one down and pass it around, mo more bottles of beear on the wall. \n\n`)
+  : console.log(`${i} bottles of beer on the wall, ${i} bottles of bear.\n Take one down and pass it around, ${i} bottles on the wall. \n\n`);
+  i--
+}
+
+console.log(`No more bottles of beer on the wall, no more bottles of beer.\n Go to the store and buy some more, ${numberBeerBootles-1} bootles of beer on the wall`)
+
+}
+
+
+bottlesBeer(200);
+```
 
 ## Summary
