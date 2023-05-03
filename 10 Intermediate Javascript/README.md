@@ -204,6 +204,7 @@ console.log(isLeap(2400))
 ```
 
 ## Collections Working with Javascript Arrays
+
 `Array` is way of storing collections of related items in the same container.
 
 ```
@@ -219,7 +220,7 @@ guestList.includes('Joseph')
 ```
 
 > Challenge
-Create a program array with list of guest, prompt the user to enter their name, a program with check if the name is in the list, then return `Welcome` or `Your name is not in the list`
+> Create a program array with list of guest, prompt the user to enter their name, a program with check if the name is in the list, then return `Welcome` or `Your name is not in the list`
 
 ```
 //my try
@@ -233,7 +234,9 @@ if(guestList.includes(nameUser)){
   console.log(`Sorry ${nameUser}, not on the guest list`)
 }
 ```
+
 ## Adding Elements and Intermediate Array Techniques
+
 ![Challenge](./img/challenge.png)
 
 ```
@@ -243,7 +246,7 @@ let output = []
 function FizzBuzz(){
   let i = 1
   while(i<=100){
-  
+
     if((i%3 === 0) && (i%5 === 0)){
        output.push('FizzBuzz')
     }else if(i%3 === 0){
@@ -253,7 +256,7 @@ function FizzBuzz(){
     }else{
        output.push(i)
     }
-    
+
 
     i++
   }
@@ -266,4 +269,29 @@ FizzBuzz()
 //Expected output
 [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz', 'Fizz', 22, 23, 'Fizz', 'Buzz', 26, 'Fizz', 28, 29, 'FizzBuzz', 31, 32, 'Fizz', 34, 'Buzz', 'Fizz', 37, 38, 'Fizz', 'Buzz', 41, 'Fizz', 43, 44, 'FizzBuzz', 46, 47, 'Fizz', 49, 'Buzz', 'Fizz', 52, 53, 'Fizz', 'Buzz', 56, 'Fizz', 58, 59, 'FizzBuzz', 61, 62, 'Fizz', 64, 'Buzz', 'Fizz', 67, 68, 'Fizz', 'Buzz', 71, 'Fizz', 73, 74, 'FizzBuzz', 76, 77, 'Fizz', 79, 'Buzz', 'Fizz', 82, 83, 'Fizz', 'Buzz', 86, 'Fizz', 88, 89, 'FizzBuzz', 91, 92, 'Fizz', 94, 'Buzz', 'Fizz', 97, 98, 'Fizz', 'Buzz']
 ```
+
+> Tips
+The order of if statements matters a lot, so it is very important to make such you order the if statement very well.
+
+## Who's Buying Lunch? Code Challenge
+![Lunch](./img/lunch.png)
+
+```
+//My try
+const buyingLunch = (arrayPeople) =>{
+  //make a random number with arrayPeople length
+  let randomNumber = Math.floor(Math.random() * arrayPeople.length);
+  //Use the randomNumber to pick a name from the array
+
+  return `${arrayPeople[randomNumber]} is going to buy lunch today`;
+}
+
+//Calling a function
+buyingLunch(['Angela','Ben','Jenny','Michael','Chloe'])
+
+//Expected output: 'Chloe is going to buy lunch today'
+```
+
+
+
 ## Summary
