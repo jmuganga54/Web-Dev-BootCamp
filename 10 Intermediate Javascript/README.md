@@ -321,4 +321,43 @@ console.log(`No more bottles of beer on the wall, no more bottles of beer.\n Go 
 bottlesBeer(200);
 ```
 
-## Summary
+## For Loops
+
+Another way we may complete the challenge is by using the `For Loops`, it works similarly like `while loop`
+![For Loops](./img/for_lop.png)
+
+```
+let output = []
+const fuzzBuzz = (ouput)=>{
+    for(let i = 1; i<=10; i++){
+        if((i%3 === 0) && (i%5 === 0)){
+       output.push('FizzBuzz')
+    }else if(i%3 === 0){
+      output.push('Fizz')
+    }else if(i%5 === 0){
+       output.push('Buzz')
+    }else{
+       output.push(i)
+    }
+}
+       return output
+}
+
+console.log(fuzzBuzz(output))
+
+Expected output:
+[1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz']
+```
+
+`When to use a while loop and when to use the For loop`. Keep in mind that `while loop` check for state, keep repeating a loop untill a state checked is not true.
+
+`For loop` we are iterating, you want to use the for loop to run a piece of code many times, and you use a for loop to define how many times you want to run a piece of code.
+
+![For and While loop](./img/for_loop.png)
+
+## Fibonacci Challenge
+
+![Fibo part 1](./img/fibo_part1.png)
+![Fibo part 2](./img/fibo_part2.png)
+![Fibo part 3](./img/fibo_part3.png)
+
