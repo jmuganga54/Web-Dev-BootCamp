@@ -92,3 +92,56 @@ index.js:1 Uncaught TypeError: Cannot set properties of null (setting 'innerHTML
 ```
 
 This means we are finding something which is not there (or it doesn't exit). So always make sure you but the `JS script tag` at the bottom of body tag, that ensure all the element have been loaded, then you can use Js to manipulate or access the exiting elements.
+
+## Introduction of the DOM
+In order to make website interactive we have to have ability to change part of the website in the fly.
+
+The DOM (Document Object Model), the problem that it's solving is it `divide/catalogue the webpage into individual elements that we can modify and manipulate`
+
+The task of converting the HTML page into the DOM is done by the `browser`, it turns all the HTML page element and there associate data into a tree structure.
+
+![DOM](./imgs/DOM.png)
+![Tree structure](./imgs/tree_structure.png)
+
+```
+//index.js
+<body>
+
+    <h1>Hello</h1>
+    <input type="checkbox" />
+
+    <button style=":active:color:red;">Click Me</button>
+
+    <ul>
+      <li class="list"><a href="https://www.google.com"></a> Google </li>
+      <li class="list">Second</li>
+      <li class="list">Third</li>
+    </ul>
+
+    <script src="index.js"></script>
+  </body>
+```
+![HTML Tree Generator Extension](https://chrome.google.com/webstore/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg) - it helps visualize how the browser convert HTML code to DOM tree
+
+If you write `document:` into a console, you will see the entire HTML file. 
+
+```
+> document.firstElementChild - first element which is [html]
+
+> document.firstElementChild.firstElementChild - first element child of the first element child which is [head]
+> document.firstElementChild.lastElementChild which is the [body]
+
+> document.firstElementChild.lastElementChild.firstElementChild which is [h1]
+
+
+/**
+*So once you have find the element then you can *manipulate it.
+*/
+
+let heading = document.firstElementChild.lastElementChild.firstElementChild;
+heading.innnerHTML = 'Good Bye'
+
+//heading -> [h1]
+
+```
+
