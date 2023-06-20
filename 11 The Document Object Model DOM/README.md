@@ -185,3 +185,16 @@ The only difference between the `Methods` and the `Properties` is the `methods` 
 //My try
 document.querySelector('ul').lastElementChild.innerHTML = 'Schooling'
 ```
+
+## Selecting HTML Elements with Javascript
+This section we will learn how to element using javascript.
+
+```
+/*looks on the web page and search
+* element with the specified tag name,
+* it will get all the elements with that tag name
+* note: getElement(s)ByTagName()
+*/
+> document.getElementsByTagName('li').style.color = 'purple'
+
+```
