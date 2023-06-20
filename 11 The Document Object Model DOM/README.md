@@ -1,11 +1,15 @@
 ## Topic
+
 On this section we are going to applying some of the lessons that we have learnt about Javascript. We will also learn about DOM (Document Object MOdel).
 
 Also how to incorporate Javascript into HTML.
 
 ## Keywords && Notes
+
 ## Adding Javascript to Website
+
 This is our HTML Page
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -18,12 +22,12 @@ This is our HTML Page
 </head>
 <body>
     <h1>Hello</h1>
-    
+
 </body>
 </html>
 ```
 
-In CSS module, we learn different ways which we can add CSS to HTML Page, which we learn that there are three ways which you can use to add CSS to HTML Page,  which are `inline`, `internal` and `external`.
+In CSS module, we learn different ways which we can add CSS to HTML Page, which we learn that there are three ways which you can use to add CSS to HTML Page, which are `inline`, `internal` and `external`.
 
 Javascript works very similarly, you can add `inline`, `internal` and `external` js.
 
@@ -32,7 +36,7 @@ Javascript works very similarly, you can add `inline`, `internal` and `external`
 //index.html
 <body onload = "alert('Hello')">
     <h1>Hello</h1>
-    
+
 </body>
 
 //When the page loads, create an alert "Hello"
@@ -94,6 +98,7 @@ index.js:1 Uncaught TypeError: Cannot set properties of null (setting 'innerHTML
 This means we are finding something which is not there (or it doesn't exit). So always make sure you but the `JS script tag` at the bottom of body tag, that ensure all the element have been loaded, then you can use Js to manipulate or access the exiting elements.
 
 ## Introduction of the DOM
+
 In order to make website interactive we have to have ability to change part of the website in the fly.
 
 The DOM (Document Object Model), the problem that it's solving is it `divide/catalogue the webpage into individual elements that we can modify and manipulate`
@@ -121,14 +126,16 @@ The task of converting the HTML page into the DOM is done by the `browser`, it t
     <script src="index.js"></script>
   </body>
 ```
-![HTML Tree Generator Extension](https://chrome.google.com/webstore/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg) - it helps visualize how the browser convert HTML code to DOM tree
 
-If you write `document:` into a console, you will see the entire HTML file. 
+[HTML Tree Generator Extension](https://chrome.google.com/webstore/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg) - it helps visualize how the browser convert HTML code to DOM tree
+
+If you write `document:` into a console, you will see the entire HTML file.
 
 ```
 > document.firstElementChild - first element which is [html]
 
 > document.firstElementChild.firstElementChild - first element child of the first element child which is [head]
+
 > document.firstElementChild.lastElementChild which is the [body]
 
 > document.firstElementChild.lastElementChild.firstElementChild which is [h1]
@@ -141,7 +148,40 @@ If you write `document:` into a console, you will see the entire HTML file.
 let heading = document.firstElementChild.lastElementChild.firstElementChild;
 heading.innnerHTML = 'Good Bye'
 
+//change color of the element
+heading.style.color = 'red'
+
+//look on the entire document an input element
+document.querySelector('input).click();
+
 //heading -> [h1]
 
 ```
 
+So you can see an element inside the DOM they can have `properties` and `Methods`
+![properties_methods](./imgs/properties_methods.png)
+
+```
+//For example
+//Car object can have properties and methods
+
+//Properties
+//get Property
+car.color; //red
+
+//set Property
+car.numberOfDors = 0;
+
+//Methods
+//Call Methods
+car.drive();
+```
+
+The only difference between the `Methods` and the `Properties` is the `methods` is something that the object can do. Note the methods have parenthesis at the end, while the properties they don't have that.
+
+`Challenge` find the last element of the unordered list(ul) then change it's content to your name or any name, you must do that on the console.
+
+```
+//My try
+document.querySelector('ul').lastElementChild.innerHTML = 'Schooling'
+```
