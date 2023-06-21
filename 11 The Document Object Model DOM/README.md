@@ -278,3 +278,26 @@ OR
 > document.querySelector('li a').style.color = 'red`
 ```
 
+## Manipulating and Changing Styles of HTML Elements with Javascript
+
+On this section we will be learning on how to change css properties using javascript.
+
+The properties names they may look a little different. As you notes javascript name conversion tend to be camel case (ex:querySelector), this is standard for naming method and properties in javascript.
+
+[HTML DOM Style Object](https://www.w3schools.com/jsref/dom_obj_style.asp)
+
+When using Javascript the assigned values must be quoted "" or ''
+
+
+ 
+```
+document.querySelector('hi').style.color = 'red'
+document.querySelector('h1').style.fontSize = '10rem'
+```
+
+`Challenge` change the background color of the btn using js
+```
+//My try
+document.querySelector('.btn').style.backgroundColor = 'yellow'
+```
+
