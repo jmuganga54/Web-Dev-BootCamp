@@ -301,3 +301,68 @@ document.querySelector('h1').style.fontSize = '10rem'
 document.querySelector('.btn').style.backgroundColor = 'yellow'
 ```
 
+## The Separation of Concerns Structure vs Behaviour
+
+In order to keep our code tight, and easy to debug, we have to keep an idea of separation of concerned.
+
+That means `HTML` is for you content only. `CSS` is there to style your elements, while `JS` is for behavior. 
+
+```
+/**
+*.classList - provide all the class attached to *the element
+*/
+> document.querySelector('button`).classList
+
+//Expected output: ['btn', value:'btn']
+
+/**
+* .add - used to add things
+* Adding new class [invisible] to button element
+*/
+> document.querySelector('button').classList.add('invisible)
+
+/**
+*So you can create a class invisible in CSS and add
+* it using javascript
+*/
+
+.invisible{
+  visibility:hidden
+}
+```
+
+So using the above method we can keep all of our styles in our css stylesheet, but turning on and off using Javascript.
+
+```
+/**
+*.remove()
+* you can remove a class using remove method
+*/
+
+> document.querySelector('button').classList.remove('invisible)
+
+/**
+* toggle() -means if the class has already been 
+* applied remove it, if not add it.
+*/
+
+> > document.querySelector('button').classList.toggle('invisible)
+
+```
+
+`Challenge` create a huge class with font-size 10rem in Css then add it to h1 element
+
+```
+//My try
+
+//styles.css
+.huge {
+  font-size: 10rem;
+  font-weight:bold
+}
+
+//index.js
+document.querySelector('h1').classList.add('huge')
+```
+
+This is how we separate concerns using HTML, CSS and JS
