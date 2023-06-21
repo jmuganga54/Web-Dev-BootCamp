@@ -193,8 +193,88 @@ This section we will learn how to element using javascript.
 /*looks on the web page and search
 * element with the specified tag name,
 * it will get all the elements with that tag name
-* note: getElement(s)ByTagName()
+* note: getElement(s)ByTagName() - s plural
+* Then you can pick the postion as normal array
 */
-> document.getElementsByTagName('li').style.color = 'purple'
+> document.getElementsByTagName('li')[1].style.color = 'purple'
 
+//if we want to know the length, number of elements
+>document.getElementsByTagName('li').length
+
+/**
+* getELementsByClassName - allow you to 
+* get elements using class names, note (s)
+* Even if there is one item, when wanting to 
+* access element use [0]
+*/
+>document.getElementsByClassName('btn')[0].style.color = green
+
+
+/**
+* getElementbyId()
+* note no plural just Element
+* it provide only single element, first that match
+* Id are unique on each web page
+*/
+> document.getElementById('title').style.color = 'pink'
+
+
+/** 
+*querySelector() - allow you to select element
+* by using the selectors, using this way, you can
+* combine different selectors to get element.
+* Note when selecting id or classes, include #,.
+* This only return the first element which match
+* the selector
+*/
+> document.querySelector('#title').innerHTML = 'Programming'
+> document.querySelector('.btn').style.color = 'green'
+> document.querySelector('li a')
+> document.querySelector('li.item')
+
+/**
+* querySelectorAll() - same as above,
+* the only difference is it return more than
+* one element or all the elements which match the 
+* the selector
+*
+* Note if you want to change or manipulate the elements, you must include the index of that element
+*/
+> document.querySelectorAll('li')
 ```
+
+So it is recommended to use `querySelector()` or `querySelectorAll`  to select elements from a webpage, cause it allow to select element using different complex selector compared to the rest of selectors.
+
+`Challenge` Change the color of the `Google` link 
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Hello</h1>
+    <input type="checkbox" />
+
+    <button class="btn" style=":active:color:red;">Click Me</button>
+
+    <ul>
+      <li class="list"><a href="https://www.google.com"></a> Google</li>
+      <li class="list">Second</li>
+      <li class="list">Third</li>
+    </ul>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+//My try
+>document.querySelectorAll('li')[0].style.color = 'red'
+OR
+> document.querySelector('li a').style.color = 'red`
+```
+
