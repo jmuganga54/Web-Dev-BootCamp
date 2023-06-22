@@ -366,3 +366,33 @@ document.querySelector('h1').classList.add('huge')
 ```
 
 This is how we separate concerns using HTML, CSS and JS
+
+## Text Manipulation and The Tex Content Property
+
+Up untill now, we see we can change the text instead an html element using `innerHTML` but there is another element that you can use which is `textContent`.
+
+So you can think that there are doing the same thing, changing the content of selected html element,but in reality there are different, so the `innerHTML` do what it is saying it provide the inner html inside the selected html element, while the `textContent` provide just the text content.
+
+```
+//index.html
+ <h1 id="title"><strong>Hello</strong</h1>
+
+ //index.js
+ document.querySelector('h1').innerHTML;
+ //Expected output: <strong>Hello</strong>
+
+ document.querySelector('h1').textContent;
+
+ //Expected output: Hello
+```
+
+So this means if you are using `innerHTML` you can add html tag in fly, 
+
+```
+//index.html
+ <h1 id="title"><strong>Hello</strong</h1>
+
+ //index.js
+ document.querySelector('h1').innerHTML = '<em>Good Bye<em>'
+
+```
