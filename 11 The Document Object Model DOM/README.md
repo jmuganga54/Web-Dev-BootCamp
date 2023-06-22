@@ -396,3 +396,34 @@ So this means if you are using `innerHTML` you can add html tag in fly,
  document.querySelector('h1').innerHTML = '<em>Good Bye<em>'
 
 ```
+
+## Manipulating HTML Element Attributes
+Now that we have seen how to manipulate style and text, the last things to know how to manipulate is the `atrributes`.
+
+`Just reminder` attributes are anything which goes into a tag, so attributes can be `classes`,`id's`,`href on anchor tag`, `src on image tag` etc
+
+```
+//this can give you all the attributes on a tag
+document.querySelector('a').attributes;
+
+//Exptected output: NamedNodeMap {0: href, href: href, length: 1}
+
+/**
+* getAttribute() - provide the name of single 
+* specified attribute
+*/
+document.querySelector('a`).getAttribute('href')
+
+//Expected output:'https://www.google.com'
+
+
+/**
+* setAttribute - changes attribute, it
+* takes two inputs (key, value), the 
+* attribute name and the value
+*/
+
+document.querySelector('a').setAttribute('href','https://ihi.or.tz')
+
+```
+
