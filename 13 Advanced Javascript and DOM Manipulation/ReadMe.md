@@ -52,5 +52,27 @@ for (let i = 0; i < buttons.length; i++) {
 }
 ```
 
+## Higher Order Function and Passing Functions as Arguments
+Higher Order Functions are function that can take other functions as inputs.
+
+For example, we can build a calculator function which add and multiply
+
+```
+const add = (num1, num2) => num1 + num2;
+const subtract = (num1,num2) => num1 - num2;
+const multiply = (num1, num2) => num1 * num2;
+const division = (num1, num2) => num1/num2;
+
+const calculator = (num1, num2, operator) => operator(num1,num2)
+
+//calling a function 
+debugger
+let value = calculator (2,2,subtract)
+console.log(value)
+
+//Expected output: 0
+```
+
+`Debugger` in Javascript we can use a debugger to debug our code, this can be done, by write `debugger` where you want your code to stop, then you can use the controls to line each line of code and see how it works.
 
 
