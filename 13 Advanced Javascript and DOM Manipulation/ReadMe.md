@@ -75,4 +75,4 @@ console.log(value)
 
 `Debugger` in Javascript we can use a debugger to debug our code, this can be done, by write `debugger` where you want your code to stop, then you can use the controls to line each line of code and see how it works.
 
-
+## How to Play Sounds on a website
