@@ -76,3 +76,54 @@ console.log(value)
 `Debugger` in Javascript we can use a debugger to debug our code, this can be done, by write `debugger` where you want your code to stop, then you can use the controls to line each line of code and see how it works.
 
 ## How to Play Sounds on a website
+```
+//Selector
+const buttons = document.querySelectorAll(".drum");
+
+//functions
+const playSound = (sound) => {
+  let audio = new Audio(`sounds/${sound}.mp3`);
+  audio.play();
+};
+
+for (i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function () {
+    this.style.color = "white";
+    console.log(this);
+  });
+}
+```
+
+## A Deeper Understanding of Javascript Objects
+In Javascript you can use object to collect a lot of information at once for different personnel. For example
+
+```
+let bellBoy1 = {
+  name: 'Timmy'
+  age: 19,
+  hasWorkPermit: true,
+  languages: ['French','English']
+}
+```
+
+When accessing it values, we can use `dot operator`. For example `bellBoy1.name`
+
+### Constructor Function 
+```
+function BellBoy(name, age, hasWorkPermit, languages){
+  this.name = name;
+  this.age = age;
+  this. hasWorkPermit = hasWorkPermit;
+  this.languages = languages;
+}
+```
+
+Names in constructor function have to be capitalized, the first letter must be capitalized, this is how we can tell this is a constructor function.
+
+Constructor function take a number of inputs, this are inputs which we are going to provide, when creating new objects from this constructor function. Inside the constructor function we match the input with the properties names.
+
+> Initialize object
+
+```
+let bellyBoy1 = new BellBoy("Timmy", 19, true, ["French", "English"])
+```
