@@ -178,3 +178,99 @@ for (i = 0; i < buttons.length; i++) {
   });
 }
 ```
+## Objects their Methods and the Dot Notation
+On this section we will learn about Methods in an Constructor function 
+
+This is a function before being attached with the constructor function 
+
+```
+function moveSuitcase {
+  alert('May I take your suitcase');
+  pickUpSuitcase();
+  move();
+}
+```
+
+But the the previous syntax, if we want an object to have an associated function, then what we have to do is to is to provide the name of the function as a new parameter the the anonymous function 
+
+```
+let bellBoy1 = {
+  name: "Timmy",
+  age: 19,
+  hasWorkPermit: true,
+  languages: ['French', 'English'],
+  moveSuitcase: function(){
+    alert('May I take your suitcase?");
+    pickUpSuitcase();
+    move();
+  }
+}
+```
+This is how we implement an object with associate function.
+
+>Call Method
+```
+bellBoy1.moveSuitcase();
+```
+
+>Constructor Function
+If we want to incorporate the function in our Constructor function, all we have to do is to as below, using `this operator`
+
+function BellBoy (name, age, hasWorkPermit, languages){
+  this.name = name;
+  this.age = age;
+  this.hasWorkPermit = hasWorkPermit;
+  this.languages = languages;
+  this.moveSuitcase = function (){
+    alert('May I take your suitcase?');
+    pickUpSuitcase();
+    move();
+  }
+}
+
+>Challenge add a method on Constructor function which will perform cleanness
+
+//My try
+```
+function BellBoy (name, age, hasWorkPermit, languages){
+  this.name = name;
+  this.age = age;
+  this.hasWorkPermit = hasWorkPermit;
+  this.languages = languages;
+  this.moveSuitcase = function (){
+    alert('May I take your suitcase?');
+    pickUpSuitcase();
+    move();
+  }
+
+ this.clean = function(){
+     console.log('Cleaning in progress ....')
+ }
+    
+}
+
+let bellBoy1 = new BellBoy('John',23,true, ['Swahili','English','Zulu'])
+bellBoy1.clean()
+
+//Expected output: Cleaning in progress ....
+```
+
+This is what happen when using Audio Function on our play sound example above
+
+```
+function Audio (fileLocation){
+  this.filelocation = fileLocation;
+  this.play = function(){
+    //Tap into the audio hardware
+    //Check the file at fileLocation exists
+    //Check the file at fileLocation is a sound file
+    //Play the file at fileLocation
+  }
+}
+
+//Call Method
+let tom1 = new Audio('sounds/tom-1.mpe');
+tom1.play()
+```
+
+
