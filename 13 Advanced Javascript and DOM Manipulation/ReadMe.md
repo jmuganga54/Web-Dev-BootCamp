@@ -362,3 +362,65 @@ document.addEventListener("keydown", function (event) {
   makeSound(event.key);
 });
 ```
+
+## Understanding Callbacks and How to Respond to Events
+
+```
+$0.addEventListener('click',function(){
+  console.log('I got clicked');
+})
+```
+In the previous section we see how Javascript allow us to create higher order functions. `Higher Order Function` we refers to function that can take functions as inputs.
+
+```
+document.addEventListener('keydown', respondToKey(event));
+
+//function
+function respondToKey(event){
+  console.log('Key pressed');
+}
+```
+
+So in the above case `addEventListener()` is the `higher order function`, as it takes `respondToKey(event)` as input.
+
+`Callback Function` is the function which is pass in as an input. It allow to wait for something to finish happening, for example waiting for a click event, the the callback function is call back and executed.
+
+Previous the the button detect key press down, it call the `callback function`, on the above example when the document detect the key press down, the document will call `respondToKey(event)` to execute. We can also get the event that trigger the `addEventListener()` pass back to `respondTokey()` which is `event`
+
+The funny crazy part is, the `callback function` is not call by us, but it is called by the object that experience an `event(click)`
+
+So let pretend to create a function `addEventListener`
+
+```
+
+//function
+function anotherAddEventListener(typeOfEvent, callback){
+  //Detech Event Code
+  let eventThatHappend = {
+    eventType: 'keypress',
+    key: 'p',
+    durationOfKeypress: 2
+  }
+
+  
+  //Our callback doesn't been called for all type of event:check
+  if(eventThatHappend.eventType === typeOfEvent){
+    //passing the event that was clicked to callback
+    callback(eventThatHappend)
+  }
+}
+
+//call function
+anotherAddEventListener('keypress', function(event){
+    console.log(event)
+} )
+
+//Expected output: 
+ {
+    "eventType": "keypress",
+    "key": "p",
+    "durationOfKeypress": 2
+}
+```
+
+
