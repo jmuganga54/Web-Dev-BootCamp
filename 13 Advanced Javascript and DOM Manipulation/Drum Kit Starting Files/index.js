@@ -50,14 +50,26 @@ const makeSound = (key) => {
   }
 };
 
+const buttonAnimation = (currentKey) => {
+  let activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add("pressed");
+  setTimeout(() => {
+    activeButton.classList.remove("pressed");
+  }, 100);
+};
+
+//EVentListener
+//button
 for (i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function () {
     let buttonInnerHTML = this.innerText;
     makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
   });
 }
 
-//EVentListener
+//document
 document.addEventListener("keydown", function (event) {
   makeSound(event.key);
+  buttonAnimation(event.key);
 });

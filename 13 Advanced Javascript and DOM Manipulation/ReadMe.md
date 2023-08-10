@@ -288,7 +288,8 @@ tom1.play()
 ```
 
 ## Using Keyboard Event Listeners to check for Key Presses
-We can use event to listen to what button was clicked. The below code show how we can achieve that 
+
+We can use event to listen to what button was clicked. The below code show how we can achieve that
 
 ```
 document.addEventListener("keydown", function () {
@@ -305,13 +306,15 @@ function () {
   alert("Key were precessed");
 }
 ```
+
 The when the above function is triggered, thee is also a option to pass in the parameter, we can call that parameter `event` or `e`, what this parameter allow us to do, is it let us tap into events, that triggered the event listener.
 
 For example for event `keydown`, you can see the properties of the `event` on [keydown events documentation](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event)
 
-> Challenge use the event Listener on drum kit 
+> Challenge use the event Listener on drum kit
 
 //try
+
 ```
 //function
 const makeSound = function (key) {
@@ -370,6 +373,7 @@ $0.addEventListener('click',function(){
   console.log('I got clicked');
 })
 ```
+
 In the previous section we see how Javascript allow us to create higher order functions. `Higher Order Function` we refers to function that can take functions as inputs.
 
 ```
@@ -402,7 +406,7 @@ function anotherAddEventListener(typeOfEvent, callback){
     durationOfKeypress: 2
   }
 
-  
+
   //Our callback doesn't been called for all type of event:check
   if(eventThatHappend.eventType === typeOfEvent){
     //passing the event that was clicked to callback
@@ -415,7 +419,7 @@ anotherAddEventListener('keypress', function(event){
     console.log(event)
 } )
 
-//Expected output: 
+//Expected output:
  {
     "eventType": "keypress",
     "key": "p",
@@ -423,4 +427,85 @@ anotherAddEventListener('keypress', function(event){
 }
 ```
 
+## Adding Animation to Websites
 
+Adding Animation, when the button is clicke the button flash.
+
+```
+//Selector
+const buttons = document.querySelectorAll(".drum");
+
+//functions
+const playSound = (sound) => {
+  let audio = new Audio(`sounds/${sound}.mp3`);
+  audio.play();
+};
+
+const makeSound = (key) => {
+  switch (key) {
+    case "w":
+      let tom1 = new Audio(`sounds/tom-1.mp3`);
+      tom1.play();
+      break;
+
+    case "a":
+      let tom2 = new Audio(`sounds/tom-2.mp3`);
+      tom2.play();
+      break;
+
+    case "s":
+      let tom3 = new Audio(`sounds/tom-3.mp3`);
+      tom3.play();
+      break;
+
+    case "d":
+      let tom4 = new Audio(`sounds/tom-4.mp3`);
+      tom4.play();
+      break;
+
+    case "j":
+      let tom5 = new Audio(`sounds/snare.mp3`);
+      tom5.play();
+      break;
+
+    case "k":
+      let tom6 = new Audio(`sounds/crash.mp3`);
+      tom6.play();
+      break;
+
+    case "l":
+      let tom7 = new Audio(`sounds/kick-bass.mp3`);
+      tom7.play();
+      break;
+
+    default:
+      console.log(key);
+      break;
+  }
+};
+
+const buttonAnimation = (currentKey) => {
+  let activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add("pressed");
+  setTimeout(() => {
+    activeButton.classList.remove("pressed");
+  }, 100);
+};
+
+//EVentListener
+//button
+for (i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function () {
+    let buttonInnerHTML = this.innerText;
+    makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
+  });
+}
+
+//document
+document.addEventListener("keydown", function (event) {
+  makeSound(event.key);
+  buttonAnimation(event.key);
+});
+
+```
