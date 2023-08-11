@@ -32,3 +32,22 @@ jQuery('h1')
 $('h1')
 ```
 ## Keypoints and Notes
+
+## How to Incorporate jQuery into Websites
+When you go to [query.com](https://jquery.com/), you can download jQuery code ,use CDN or use npm package.
+
+If you want to use [google CDN](https://developers.google.com/speed/libraries#jquery), you can copy the script taga
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="./app.js"></script>
+```
+
+The position you put your jQuery script is very important, if you put it on head section include the following
+
+```
+$(document).ready(function(){
+    $('h1').css('color','red')
+})
+```
+
+But if you put it at the button of body section, there is no need to put that line.
