@@ -63,3 +63,18 @@ But if you put it at the button of body section, there is no need to put that li
 `Minification` is the way to reduce the size of the file, by removing spaces and make the file easy to transport.
 
 [Minifier](minifier.org), you can use this website to minify your css or javascript code.
+
+## Selecting Element with JQuery
+The most important think we can do is to select the element in javascript, inorder to manipulate elements.
+
+```
+document.querySelector('h1')
+
+$('h1')
+
+document.querySelectorAll('button')
+
+$('button')
+```
+
+In `jQuery` there is no difference between selecting one and selecting many. 
