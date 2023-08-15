@@ -1,8 +1,18 @@
-document.querySelector('h1')
+//assign css to selector
+// $("h1").css("color", "green");
 
-$('h1')
+//getting the value of css
+console.log($("h1").css("color"));
+console.log($("h1").css("font-size"));
 
+//Adding Class to selector
+$("h1").addClass("big-title");
 
-document.querySelectorAll('button')
+//Adding Multiplier classes to selector
+$("h1").addClass("big-title margin-50");
 
-$('button')
+//removing Classes
+$("h1").removeClass("big-title");
+
+//checking if has a class
+$("h1").hasClass("margin-title");

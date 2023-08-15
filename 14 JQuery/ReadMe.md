@@ -60,11 +60,13 @@ $(document).ready(function(){
 But if you put it at the button of body section, there is no need to put that line.
 
 ## How Minification works to Reduce File Size
+
 `Minification` is the way to reduce the size of the file, by removing spaces and make the file easy to transport.
 
 [Minifier](minifier.org), you can use this website to minify your css or javascript code.
 
 ## Selecting Element with JQuery
+
 The most important think we can do is to select the element in javascript, inorder to manipulate elements.
 
 ```
@@ -77,4 +79,55 @@ document.querySelectorAll('button')
 $('button')
 ```
 
-In `jQuery` there is no difference between selecting one and selecting many. 
+In `jQuery` there is no difference between selecting one and selecting many.
+
+## Manipulating Styeles with JQuery
+
+```
+//selecting the element and assign css property and value
+$('h1').css('color','green) //setting the value
+
+//get the value of property
+$('h1').css('color')
+
+//Expected output: rgb(0, 128, 0)
+
+$('h1').css('font-size')
+//Expected output: 32px
+```
+
+Seperation of concerned
+
+```
+Js - behaviour
+css - appearance
+HTML - Content
+```
+
+```
+//css
+.big-title{
+    fon-size: 10rem;
+    color:yellow;
+    font-family:cursive;
+}
+
+.margin-50{
+    margin:50px;
+}
+
+//Js
+//add Class Single class
+$('h1').addClass("big-title")
+
+//add Multiple Classes
+$('h1').addClass("big-title margin-50")
+
+//remove Class
+$('h1').removeClass("big-title")
+
+//checking if has class
+$('h1').hasClass("margin-50")
+```
+
+The above, is the much better way of separating behaviors from our styles.
