@@ -16,3 +16,9 @@ $("h1").removeClass("big-title");
 
 //checking if has a class
 $("h1").hasClass("margin-title");
+
+$("h1").text("Joseph Muganga");
+
+$("button").text("Joseph Muganga");
+
+$("button").html("<strong>Joseph Muganga</strong>");

@@ -81,7 +81,7 @@ $('button')
 
 In `jQuery` there is no difference between selecting one and selecting many.
 
-## Manipulating Styeles with JQuery
+## Manipulating Styles with JQuery
 
 ```
 //selecting the element and assign css property and value
@@ -96,7 +96,7 @@ $('h1').css('font-size')
 //Expected output: 32px
 ```
 
-Seperation of concerned
+> Separation of concerned
 
 ```
 Js - behaviour
@@ -131,3 +131,28 @@ $('h1').hasClass("margin-50")
 ```
 
 The above, is the much better way of separating behaviors from our styles.
+
+## Manipulating Text with jQuery
+Inorder the change the text of selected jQuery there two ways to going about it.
+
+First way, you can select an element and use `.text()` and ad the text you want
+
+```
+$('h1').text('Joseph Muganga')
+
+//This will change Hello to Joseph Muganga
+```
+
+But if you use to select all the button and change it's text, we can do the same, but this will change the text of every button to have the same text.
+
+```
+$('button').text('Joseph Muganga')
+```
+
+`.html()` it help us to insert not only the text, but also the html code
+
+```
+$('button').html('<strong>Joseph Muganga</strong>')
+```
+
+Most of the things you do in jQuery you use methods to implement them, which we access them using `.` notation.
