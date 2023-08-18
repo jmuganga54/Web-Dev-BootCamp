@@ -133,6 +133,7 @@ $('h1').hasClass("margin-50")
 The above, is the much better way of separating behaviors from our styles.
 
 ## Manipulating Text with jQuery
+
 Inorder the change the text of selected jQuery there two ways to going about it.
 
 First way, you can select an element and use `.text()` and ad the text you want
@@ -156,3 +157,31 @@ $('button').html('<strong>Joseph Muganga</strong>')
 ```
 
 Most of the things you do in jQuery you use methods to implement them, which we access them using `.` notation.
+
+## Manipulating Attributes with jQuery
+
+On this section we are going to learn on how to manipulate attributes using jQuery.
+
+```
+$("img").attr("src")
+
+//getting the attribute name
+console.log($("img").attr("src"));
+
+//Expected outpu: drum.png
+
+```
+
+So in adding of getting the value of the attribute, you can set the value of the attribute.
+
+```
+$("a").attr("href","https://vcptu.ihi.or.tz")
+```
+
+Remember a class is also a html attribute, so we can use `.attr` to get it's value, of all applied class at h1
+
+```
+console.log($('h1').attr('class'))
+
+//Expected output: big-title margin-50
+```
