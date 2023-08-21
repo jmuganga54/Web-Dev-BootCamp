@@ -185,3 +185,48 @@ console.log($('h1').attr('class'))
 
 //Expected output: big-title margin-50
 ```
+
+## Adding EventListeners with JQuery
+
+On this section we are going to learn how to add event listeners using jQuery.
+
+```
+$('h1').click(function(){
+    $('h1').css("color", "purple" )
+})
+```
+
+If we want to add event listeners to all the five button that we have, we have to write a for loop.
+
+```
+//Vanilla Js
+for(let i=0; i<5; i++){
+    document.querySelectorAll('button')[i].addEventListener('click', function(){
+        document.querySelector('h1').style.color = 'purple';
+    })
+}
+```
+
+```
+//using jQuery
+$('button').click(function(){
+    $('h1').css('color','purple')
+})
+```
+
+If you want to listen for keypress event
+
+```
+$("input").keypress(function (event) {
+  console.log(event.key);
+});
+
+```
+
+Another way to detech events using jQuery is to use `.on`
+
+```
+$('h1').on('mouseover',function(){
+    $('h1").css("color","purple")
+})
+```
