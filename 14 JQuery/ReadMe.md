@@ -259,9 +259,55 @@ $("h1").prepend("<button>New</button>")
 $("h1").append("<button>New</button>")
 ```
 
-If you want to remove element is really simple, all you need to do is 
+If you want to remove element is really simple, all you need to do is
 
 ```
 $("button").remove()
 ```
+
 The above will get rid of all button element in our page.
+
+## Website Animations with jQuery
+
+JQuery makes really easy to implement some common animation which you may want to do when creating websites.
+
+```
+$("button").on("click", function(){
+    // $("h1").css("color","purple")
+     $("h1").hide()
+})
+```
+
+If we want to show the only thing to do is
+
+```
+$("h1").show();
+```
+
+We can toggle
+
+```
+$("button").on("click", function () {
+  $("h1").toggle();
+});
+```
+
+We can also use fadeOut() - will reduce the opacity then it will hide it.
+
+```
+$("button").on("click", function () {
+  $("h1").fadeOut();
+});
+```
+
+The opposite of `fadeOut()` is `fadeIn()`
+
+```
+$("button").on("click", function () {
+  $("h1").fadeIn();
+});
+```
+
+All this comes with Toggle so you can `fadeOutToggle()` and `fadeInToggle()`
+
+Another one is `slideDown()` and `SlideUp`

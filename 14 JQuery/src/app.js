@@ -48,6 +48,24 @@ console.log($("h1").attr("class"));
 //   $("h1").text(event.key);
 // });
 
-$("h1").on("mouseover", function () {
-  $("h1").css("color", "purple");
+// $("h1").on("mouseover", function () {
+//   $("h1").css("color", "purple");
+// });
+
+// $("button").on("click", function () {
+//   $("h1").hide();
+// });
+
+// $("button").on("click", function () {
+//   $("h1").toggle();
+// });
+
+// $("button").on("click", function () {
+//   $("h1").fadeOut();
+// });
+
+$("button").on("click", function () {
+  $("h1").fadeIn();
 });
+
+// $("h1").show();
