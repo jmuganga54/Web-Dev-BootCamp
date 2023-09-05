@@ -230,3 +230,38 @@ $('h1').on('mouseover',function(){
     $('h1").css("color","purple")
 })
 ```
+
+## Adding and Removing Elements with jQuery
+
+When our website is live and running we can use jQuery to add new elements on the fly.
+
+```
+$("h1").before("<button>New</button>")
+```
+
+As the example above, it means we can create an html element at anytime we want by using codes.
+
+There is also the `after()` function which create an element after the element
+
+```
+$("h1").after("<button>New</button>")
+```
+
+Also there is `prepend` and `append`. `Prepend` will add the new html element into the item you selected, just after the opening tag (inside).
+
+```
+$("h1").prepend("<button>New</button>")
+```
+
+`Append` will add a new html element, inside but after the text before the end tag.
+
+```
+$("h1").append("<button>New</button>")
+```
+
+If you want to remove element is really simple, all you need to do is 
+
+```
+$("button").remove()
+```
+The above will get rid of all button element in our page.
