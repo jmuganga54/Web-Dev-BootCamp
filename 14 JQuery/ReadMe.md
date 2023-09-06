@@ -308,6 +308,56 @@ $("button").on("click", function () {
 });
 ```
 
-All this comes with Toggle so you can `fadeOutToggle()` and `fadeInToggle()`
+All this comes with Toggle so you can `fadeToggle()
+
+```
+$("button").on("click", function () {
+  $("h1").fadeToggle();
+});
+```
 
 Another one is `slideDown()` and `SlideUp`
+
+```
+$("button").on("click", function () {
+  $("h1").slideUp();
+});
+
+
+$("button").on("click", function () {
+  $("h1").slideDown();
+});
+
+```
+
+Slide comes with `slideToggle`, this can be useful for something like drop down menu
+```
+$("button").on("click", function () {
+  $("h1").slideToggle();
+});
+```
+
+Instead of using this predefined ones, you can use `.animate()`, this allows you to define custom CSS that you gradually want to animate towards.
+
+```
+$("button").on("click", function () {
+  $("h1").animate({opacity:0.5})
+});
+```
+
+Thing to remember about `animate()` methods, you only add CSS rules with numeric value. Stick with things that have numeric value. For example {margin: "20%"} but not things like {color: "red"}
+
+```
+$("button").on("click", function () {
+  $("h1").animate({ margin: "20%" });
+});
+```
+
+If you want to set up more the one rule you can do that by chaining together.
+
+```
+$("button").on("click", function () {
+  $("h1").slideUp().slideDown().animate({ opacity: 0.5 });
+});
+```
+In programming, never try to remember or memorize anything, there is alway documentation and there is world wide web to help you in exactly moment you need the information.
