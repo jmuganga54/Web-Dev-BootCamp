@@ -3,6 +3,7 @@
 let userClickedPattern = []
 let gamePattern = []
 let buttonColours = ['red', 'blue', 'green', 'yellow']
+let level = 0
 
 //functions
 /**
@@ -45,6 +46,8 @@ const nextSequence = () => {
   //addEVentListener when the button is clicked
   $(document).ready(function () {
     $('div[type="button"]').click(function (e) {
+      $('#level_title').text(`level ${level}`)
+      level++
       let userChosenColour = e.target.id
 
       userClickedPattern.push(userChosenColour)
@@ -64,7 +67,7 @@ const nextSequence = () => {
 let startToggle = true
 $(document).keypress(function (event) {
   if (startToggle) {
-    $(`#${level - title}`).text('level 0')
+    $('#level_title').text(`level ${level}`)
     nextSequence()
     startToggle = false
   }
