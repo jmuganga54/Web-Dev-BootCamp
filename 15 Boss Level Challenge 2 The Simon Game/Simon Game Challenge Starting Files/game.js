@@ -4,6 +4,7 @@ let userClickedPattern = []
 let gamePattern = []
 let buttonColours = ['red', 'blue', 'green', 'yellow']
 let level = 0
+
 //get track if the game as started
 let started = false
 
@@ -28,29 +29,36 @@ const animatePress = (currentColour) => {
   }, 100)
 }
 
-/**
- *
- */
 const nextSequence = () => {
   //pick a random position number
   level++
   $('#level_title').text(`Level ${level}`)
+  console.log(level)
 
   let randomNumber = Math.floor(Math.random() * 4)
+  console.log(`randomNumber: ${randomNumber}`)
 
   //pick a random color based on position
   let randomChosenColour = buttonColours[randomNumber]
   //assign it to array
   gamePattern.push(randomChosenColour)
+  console.log(gamePattern)
 
   // make a button flash
   $(`#${randomChosenColour}`).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100)
   //play audio when button is clicked
   playSound(randomChosenColour)
-
-  return userClickedPattern
 }
 
+const checkAnswer = (currentLevel) => {
+  console.log(`currentLevel: ${currentLevel}`)
+  //if the most recent user answer is the same as the game pattern
+  if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
+    console.log('Success')
+  } else {
+    console.log('wrong')
+  }
+}
 //Call function
 
 $(document).keypress(function (event) {
@@ -62,10 +70,11 @@ $(document).keypress(function (event) {
 })
 
 //addEVentListener when the button is clicked
-$('div[type="button"]').click(function (e) {
+$('.btn').click(function (e) {
   let userChosenColour = e.target.id
   userClickedPattern.push(userChosenColour)
-  console.log(userClickedPattern)
+  checkAnswer(userClickedPattern.length - 1)
+  playSound(userChosenColour)
   //add animated background to the button
   animatePress(userChosenColour)
 })
