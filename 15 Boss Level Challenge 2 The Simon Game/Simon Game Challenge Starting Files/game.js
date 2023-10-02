@@ -55,12 +55,16 @@ const checkAnswer = (currentLevel) => {
   //if the most recent user answer is the same as the game pattern
   if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
     console.log('Success')
+    if (userClickedPattern.length === gamePattern.length) {
+      setTimeout(function () {
+        nextSequence()
+      }, 1000)
+    }
   } else {
     console.log('wrong')
   }
 }
 //Call function
-
 $(document).keypress(function (event) {
   if (!started) {
     $('#level_title').text(`level ${level}`)
